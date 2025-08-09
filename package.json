@@ -3,15 +3,32 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "androidDev": "react-native run-android --mode=devDebug --appIdSuffix dev",
+    "androidDevRelease": "react-native run-android --mode=devRelease --appIdSuffix dev",
+    "androidStaging": "react-native run-android --mode=stagingDebug --appIdSuffix staging",
+    "androidStagingRelease": "react-native run-android --mode=stagingRelease --appIdSuffix staging",
+    "androidProd": "react-native run-android --mode=prodDebug",
+    "androidProdRelease": "react-native run-android --mode=prodRelease",
+    "buildAndroidDevApk": "cd android && ./gradlew clean && ./gradlew createBundleDevReleaseJsAndAssets && ./gradlew assembleDevRelease && cd ..",
+    "buildAndroidStagingApk": "cd android && ./gradlew clean && ./gradlew createBundleStagingReleaseJsAndAssets && ./gradlew assembleStagingRelease && cd ..",
+    "buildAndroidProdApk": "cd android && ./gradlew clean && ./gradlew createBundleProdReleaseJsAndAssets && ./gradlew assembleProdRelease && cd ..",
+    "buildAndroidProdBundle": "cd android && ./gradlew clean && ./gradlew createBundleProdReleaseJsAndAssets && ./gradlew bundleProdRelease && cd ..",
     "android": "react-native run-android",
+    "clean-android": "cd android && ./gradlew clean && cd ..",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
+    "linkAssets": "npx react-native-asset",
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-vector-icons/ionicons": "12.3.0",
+    "@react-navigation/native": "7.1.17",
+    "@react-navigation/native-stack": "7.3.24",
     "react": "18.3.1",
-    "react-native": "0.76.5"
+    "react-native": "0.76.5",
+    "react-native-safe-area-context": "5.5.2",
+    "react-native-screens": "4.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
