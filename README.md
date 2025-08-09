@@ -30,12 +30,29 @@ A minimal React Native boilerplate app with basic theming, navigation, and envir
 
 - ✅ **Platform-Specific Configurations**
 
-  - 🤖 **Android:** Config-based product flavours for environment-specific builds
+  - 🤖 **Android:** Config-based product flavours for environment-specific builds and different app icons and app id suffix too for different flavours (dev, staging and production)
   - 🍏 **iOS:** Upcoming feature — config-based app variants planned
 
 - ✅ **Basic Screens (Dashboard)**
   - 🏠 **Home Screen** → Home Tab
   - ⚙ **Settings Screen** → Theme switch button (Light/Dark)
+
+## ⚠️ IMPORTANT
+
+- This boilerplate contains custom scripts in package.json for running the application.
+  You must use these scripts to ensure that the correct environment configuration and build flavors are applied.
+- To run the app, first clone the repo and install the yarn dependencies with the help of `yarn` command in the project folder inside terminal
+
+Check `package.json` for all the important scripts
+
+| Script                       | Platform | Environment           | Description                           |
+| ---------------------------- | -------- | --------------------- | ------------------------------------- |
+| `yarn androidDev`            | Android  | Development           | Runs dev debug flavour build          |
+| `yarn androidDevRelease`     | Android  | Development           | Runs dev release flavour build        |
+| `yarn androidStaging`        | Android  | Staging               | Runs staging debug flavour build      |
+| `yarn androidStagingRelease` | Android  | Staging               | Runs staging release flavour build    |
+| `yarn androidProdRelease`    | Android  | Production            | Runs production release flavour build |
+| `yarn ios`                   | iOS      | Development (default) | Runs app on iOS                       |
 
 ## 📸 Screenshots
 
