@@ -69,3 +69,11 @@ Check `package.json` for all the important scripts
   <img src="./screenshots/screen_1_light.png" alt="Home Light Theme" width="45%"/>
   <img src="./screenshots/screen_2_light.png" alt="Settings Light Theme" width="45%"/>
 </p>
+
+## ❤ Show your support
+
+Give a ⭐️ if this project helped you!
+
+<a href="https://buymeacoffee.com/sachinrupani" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="160">
+</a>
