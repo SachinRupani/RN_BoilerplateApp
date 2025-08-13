@@ -29,7 +29,7 @@ export function Dashboard() {
       case AppBottomTabType.Settings:
         return <SettingsScreen />;
     }
-  }, [tabs]);
+  }, [activeTabType]);
 
   // Handle tab click
   const _handleTabClick = useCallback(
