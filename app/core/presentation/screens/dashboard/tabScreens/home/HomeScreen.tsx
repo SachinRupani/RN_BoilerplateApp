@@ -1,8 +1,10 @@
 import {View} from "react-native";
 
 import {useAppTheme} from "../../../../../../theme/ThemeContext";
+import {sampleUsers} from "../../../../../domain/entity/user/UserEntity";
 import {AppBottomTabType} from "../../../../common/appBottomTabs/data/AppBottomTabEntity";
 import {AppHeaderMemoized} from "../../../../common/appHeader/AppHeader";
+import {UserList} from "./components/userList/UserList";
 import {getHomeStyles} from "./styles/HomeScreen.styles";
 
 export function HomeScreen() {
@@ -10,7 +12,7 @@ export function HomeScreen() {
   const stylesToUse = getHomeStyles(colors);
 
   const _renderBodyContent = () => {
-    return <></>;
+    return <UserList listData={sampleUsers} colors={colors} />;
   };
 
   return (

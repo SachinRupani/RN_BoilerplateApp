@@ -9,7 +9,7 @@ import {AppButtonColorType} from "../../../../common/appButton/data/AppButtonCol
 import {AppButtonVariantType} from "../../../../common/appButton/data/AppButtonVariantType";
 import {AppButtonWidthType} from "../../../../common/appButton/data/AppButtonWidthType";
 import {AppHeaderMemoized} from "../../../../common/appHeader/AppHeader";
-import {KitchenUiSectionMemoized} from "../home/components/kitchenUiSection/KitchenUiSection";
+import {KitchenUiSectionMemoized} from "../../../../common/kitchenUiSection/KitchenUiSection";
 import {getSettingsStyles} from "./styles/Settings.styles";
 
 export function SettingsScreen() {
