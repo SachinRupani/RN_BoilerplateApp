@@ -7,15 +7,5 @@ export const getHomeStyles = (colors: AppColors) => {
       flex: 1,
       flexDirection: "column",
     },
-
-    scrollViewBodyContainer: {
-      flex: 1,
-      flexDirection: "column",
-    },
-
-    scrollViewContentContainer: {
-      paddingHorizontal: 20,
-      paddingVertical: 8,
-    },
   });
 };

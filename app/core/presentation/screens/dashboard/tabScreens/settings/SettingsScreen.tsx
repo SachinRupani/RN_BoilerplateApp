@@ -1,4 +1,4 @@
-import {View} from "react-native";
+import {ScrollView, View} from "react-native";
 
 import {useCallback} from "react";
 import {useAppTheme} from "../../../../../../theme/ThemeContext";
@@ -9,6 +9,7 @@ import {AppButtonColorType} from "../../../../common/appButton/data/AppButtonCol
 import {AppButtonVariantType} from "../../../../common/appButton/data/AppButtonVariantType";
 import {AppButtonWidthType} from "../../../../common/appButton/data/AppButtonWidthType";
 import {AppHeaderMemoized} from "../../../../common/appHeader/AppHeader";
+import {KitchenUiSectionMemoized} from "../home/components/kitchenUiSection/KitchenUiSection";
 import {getSettingsStyles} from "./styles/Settings.styles";
 
 export function SettingsScreen() {
@@ -23,7 +24,9 @@ export function SettingsScreen() {
 
   const _renderBodyContent = () => {
     return (
-      <View style={stylesToUse.bodyContainer}>
+      <ScrollView
+        style={stylesToUse.scrollViewBodyContainer}
+        contentContainerStyle={stylesToUse.scrollViewContentContainer}>
         {/* Theme Switch Button */}
         <AppButtonMemoized
           colorsToUse={colors}
@@ -32,8 +35,12 @@ export function SettingsScreen() {
           variant={AppButtonVariantType.Flat}
           widthType={AppButtonWidthType.ContentWidthCenter}
           onClickAction={_handleThemeSwitchAction}
+          extraContainerStyle={stylesToUse.switchButtonContainerStyle}
         />
-      </View>
+
+        {/* Kitchen sync component */}
+        <KitchenUiSectionMemoized />
+      </ScrollView>
     );
   };
 
