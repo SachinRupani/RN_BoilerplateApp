@@ -28,7 +28,7 @@ export const useGetUsersApi = () => {
 
   const loadNextPage = () => {
     if (!isFetching && data && currentPage < data.totalPageCount) {
-      setCurrentPage(prevCount => prevCount + 1);
+      setCurrentPage(currentPage + 1);
     }
   };
 
