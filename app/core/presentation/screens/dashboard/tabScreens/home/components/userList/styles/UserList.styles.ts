@@ -8,6 +8,7 @@ export const getUserListStyles = (colors: AppColors) => {
     },
     listContentContainerStyle: {
       paddingHorizontal: 16,
+      paddingBottom: 24,
     },
   });
 };

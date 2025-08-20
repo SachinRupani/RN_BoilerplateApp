@@ -27,6 +27,7 @@ export function HomeScreen() {
           <AppLoadingContainerised
             propsLoadingIndicator={{
               indicatorSize: "large",
+              indicatorColor: colors.primary,
             }}
           />
         )}
