@@ -17,8 +17,6 @@ export const useGetUsersApi = () => {
 
   useEffect(() => {
     if (data && !isEmptyArray(data.users)) {
-      console.log("Data_loaded", JSON.stringify(data));
-
       setUsers(isEmptyArray(users) ? data.users : users.concat(data.users));
 
       // Just load 2nd page data after 1st page data load (one time action)
