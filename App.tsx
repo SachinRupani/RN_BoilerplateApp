@@ -1,14 +1,14 @@
 import {RootNavigation} from "./app/navigation/RootNavigation";
+import {AppProviders} from "./app/providers/AppProviders";
 import {RootComponent} from "./app/RootComponent";
-import {AppContextProvider} from "./app/theme/ThemeContext";
 
 function App(): JSX.Element {
   return (
-    <AppContextProvider>
+    <AppProviders>
       <RootComponent>
         <RootNavigation />
       </RootComponent>
-    </AppContextProvider>
+    </AppProviders>
   );
 }
 

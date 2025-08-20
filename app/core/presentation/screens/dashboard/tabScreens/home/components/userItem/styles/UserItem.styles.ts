@@ -8,7 +8,6 @@ export const getUserItemStyles = (colors: AppColors) => {
       padding: 16,
       backgroundColor: colors.white,
       gap: 8,
-      marginHorizontal: 16,
       borderRadius: 12,
       marginBottom: 12,
     },

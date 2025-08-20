@@ -10,7 +10,7 @@ type PropsAppImage = {
 const AppImage = ({imageUrl, resizeMode, imageStyles}: PropsAppImage) => {
   return (
     <FastImage
-      resizeMode={resizeMode ?? `contain`}
+      resizeMode={resizeMode ?? `cover`}
       style={{width: 48, height: 48, ...imageStyles}}
       source={{
         uri: imageUrl,

@@ -1,4 +1,4 @@
-export interface UserDataModel {
+export interface ApiUserDataModel {
   id: number;
   email: string;
   first_name: string;
