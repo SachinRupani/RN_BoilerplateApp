@@ -8,15 +8,15 @@ export const getAppTextStyles = (
   textVariant?: TextVariant,
   colorVariant?: TextColorVariant,
 ) => {
-  const textVariantObject = getTextStyleBasedOnVariant(textVariant ?? "base");
+  const textStyle = getTextStyleBasedOnVariant(textVariant ?? "base");
 
   const colorString = getDesiredTextColor(colors, colorVariant ?? "text1");
 
   return StyleSheet.create({
     textStyle: {
-      fontFamily: textVariantObject.fontFamily,
+      fontFamily: textStyle.fontFamily,
       color: colorString,
-      fontSize: textVariantObject.fontSize,
+      fontSize: textStyle.fontSize,
     },
   });
 };

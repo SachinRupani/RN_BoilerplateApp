@@ -1,4 +1,4 @@
 export const AppDefaults = {
-  itemsPerPage: 20,
-  startItemIndex: 0, // 1 or 0 according to what BE team suggests
+  ITEMS_PER_PAGE: 5,
+  INITIAL_PAGE_NO: 1, // 1 or 0 according to what BE team suggests
 };

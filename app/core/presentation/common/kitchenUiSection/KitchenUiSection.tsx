@@ -1,10 +1,10 @@
 import {memo} from "react";
 import {View} from "react-native";
-import {useAppTheme} from "../../../../../../../../theme/ThemeContext";
-import {AppButtonMemoized} from "../../../../../../common/appButton/AppButton";
-import {AppButtonColorType} from "../../../../../../common/appButton/data/AppButtonColorType";
-import {AppButtonVariantType} from "../../../../../../common/appButton/data/AppButtonVariantType";
-import {AppTextMemoized} from "../../../../../../common/appText/AppText";
+import {useAppTheme} from "../../../../theme/ThemeContext";
+import {AppButtonMemoized} from "../appButton/AppButton";
+import {AppButtonColorType} from "../appButton/data/AppButtonColorType";
+import {AppButtonVariantType} from "../appButton/data/AppButtonVariantType";
+import {AppTextMemoized} from "../appText/AppText";
 import {kitcheButtonSectionStyles} from "./styles/KitchenButtonsSection.styles";
 
 type PropsKitchenButtonsSection = {};

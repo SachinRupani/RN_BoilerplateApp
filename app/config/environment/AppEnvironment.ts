@@ -9,23 +9,23 @@
 interface AppEnvironment {
   displayAppName: string;
   baseUrl: string;
-  secretKey: string;
+  apiKey: string;
 }
 
 export const devEnvironment: AppEnvironment = {
   displayAppName: "App (DEV)",
-  baseUrl: "https://dev.com",
-  secretKey: "12345",
+  baseUrl: "https://reqres.in/api/",
+  apiKey: "reqres-free-v1",
 };
 
 export const stagingEnvironment: AppEnvironment = {
   displayAppName: "App (Staging)",
-  baseUrl: "https://staging.com",
-  secretKey: "123456",
+  baseUrl: "https://reqres.in/api/",
+  apiKey: "reqres-free-v1",
 };
 
 export const prodEnvironment: AppEnvironment = {
   displayAppName: "App",
-  baseUrl: "https://prod.com",
-  secretKey: "1234567",
+  baseUrl: "https://reqres.in/api/",
+  apiKey: "reqres-free-v1",
 };

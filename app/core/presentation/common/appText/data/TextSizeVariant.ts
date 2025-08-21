@@ -1,5 +1,7 @@
 import {FontFamilyConfig} from "../../../../../config/FontFamilyConfig";
 
+type TextStyle = {fontFamily: FontFamilyConfig; fontSize: number};
+
 export type TextVariant =
   | "base"
   | "sm"
@@ -10,64 +12,17 @@ export type TextVariant =
   | "3xl"
   | "4xl";
 
-export const getTextStyleBasedOnVariant = (
-  variant: TextVariant,
-): {fontFamily: FontFamilyConfig; fontSize: number} => {
-  let obj = {
-    fontFamily: FontFamilyConfig.fontRegular,
-    fontSize: 14,
-  };
+const textVariantMap: Record<TextVariant, TextStyle> = {
+  base: {fontSize: 14, fontFamily: FontFamilyConfig.fontRegular},
+  "4xl": {fontSize: 24, fontFamily: FontFamilyConfig.fontBold},
+  "3xl": {fontSize: 22, fontFamily: FontFamilyConfig.fontBold},
+  "2xl": {fontSize: 20, fontFamily: FontFamilyConfig.fontBold},
+  xl: {fontSize: 18, fontFamily: FontFamilyConfig.fontSemibold},
+  large: {fontSize: 16, fontFamily: FontFamilyConfig.fontSemibold},
+  sm: {fontSize: 12, fontFamily: FontFamilyConfig.fontRegular},
+  xs: {fontSize: 10, fontFamily: FontFamilyConfig.fontRegular},
+};
 
-  switch (variant) {
-    case "base":
-      obj = {
-        fontSize: 14,
-        fontFamily: FontFamilyConfig.fontRegular,
-      };
-      break;
-    case "4xl":
-      obj = {
-        fontSize: 24,
-        fontFamily: FontFamilyConfig.fontBold,
-      };
-      break;
-    case "3xl":
-      obj = {
-        fontSize: 22,
-        fontFamily: FontFamilyConfig.fontBold,
-      };
-      break;
-    case "2xl":
-      obj = {
-        fontSize: 20,
-        fontFamily: FontFamilyConfig.fontBold,
-      };
-      break;
-    case "xl":
-      obj = {
-        fontSize: 18,
-        fontFamily: FontFamilyConfig.fontSemibold,
-      };
-      break;
-    case "large":
-      obj = {
-        fontSize: 16,
-        fontFamily: FontFamilyConfig.fontSemibold,
-      };
-      break;
-    case "sm":
-      obj = {
-        fontSize: 12,
-        fontFamily: FontFamilyConfig.fontRegular,
-      };
-      break;
-    case "xs":
-      obj = {
-        fontSize: 10,
-        fontFamily: FontFamilyConfig.fontRegular,
-      };
-      break;
-  }
-
-  return obj;
+export const getTextStyleBasedOnVariant = (variant: TextVariant): TextStyle => {
+  return textVariantMap[variant];
 };

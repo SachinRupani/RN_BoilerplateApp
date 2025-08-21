@@ -8,14 +8,8 @@ export const getHomeStyles = (colors: AppColors) => {
       flexDirection: "column",
     },
 
-    scrollViewBodyContainer: {
+    bodyContainer: {
       flex: 1,
-      flexDirection: "column",
-    },
-
-    scrollViewContentContainer: {
-      paddingHorizontal: 20,
-      paddingVertical: 8,
     },
   });
 };

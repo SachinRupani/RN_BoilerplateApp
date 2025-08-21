@@ -6,18 +6,22 @@ export const getSettingsStyles = (colors: AppColors) => {
     container: {
       flex: 1,
       flexDirection: "column",
-      gap: 8,
     },
 
-    bodyContainer: {
+    scrollViewBodyContainer: {
+      flex: 1,
+      paddingTop: 16,
+      paddingBottom: 24,
+    },
+
+    scrollViewContentContainer: {
       flex: 1,
       flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
+      paddingHorizontal: 20,
     },
 
-    titleStyle: {
-      color: colors.text1,
+    switchButtonContainerStyle: {
+      marginVertical: 16,
     },
   });
 };
