@@ -23,6 +23,7 @@ export const getAppButtonStyles = (
       fontSize: 14,
       color: colorSet.foregroundColor,
       fontFamily: FontFamilyConfig.fontSemibold,
+      lineHeight: 20,
     },
 
     buttonFullWidth: {

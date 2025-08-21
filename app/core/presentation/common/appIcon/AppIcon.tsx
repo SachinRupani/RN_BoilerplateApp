@@ -5,7 +5,8 @@ export type IconNameType =
   | "home"
   | "home-outline"
   | "settings"
-  | "settings-outline";
+  | "settings-outline"
+  | "arrow-back";
 
 export type PropsAppIcon = {
   iconName?: IconNameType;

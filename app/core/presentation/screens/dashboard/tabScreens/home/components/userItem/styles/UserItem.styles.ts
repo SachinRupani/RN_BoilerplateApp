@@ -21,6 +21,7 @@ export const getUserItemStyles = (colors: AppColors) => {
     infoContainer: {
       flex: 1,
       flexDirection: "column",
+      gap: 4,
     },
   });
 };

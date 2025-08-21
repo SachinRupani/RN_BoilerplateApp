@@ -1,5 +1,5 @@
 import {useCallback, useMemo} from "react";
-import {SafeAreaView, View} from "react-native";
+import {View} from "react-native";
 import {useAppTheme} from "../../../../theme/ThemeContext";
 import {AppBottomTabsMemoized} from "../../common/appBottomTabs/AppBottomTabs";
 import {AppBottomTabType} from "../../common/appBottomTabs/data/AppBottomTabEntity";
@@ -40,16 +40,12 @@ export function Dashboard() {
   );
 
   return (
-    <View style={stylesToUse.parentViewContainer}>
-      <SafeAreaView style={stylesToUse.container}>
-        {/* Tab Screen */}
-        <View style={stylesToUse.tabContentContainer}>
-          {_renderTabContent()}
-        </View>
+    <View style={stylesToUse.container}>
+      {/* Tab Screen */}
+      <View style={stylesToUse.tabContentContainer}>{_renderTabContent()}</View>
 
-        {/* Bottom Tabs */}
-        <AppBottomTabsMemoized tabs={tabs} onClickAction={_handleTabClick} />
-      </SafeAreaView>
+      {/* Bottom Tabs */}
+      <AppBottomTabsMemoized tabs={tabs} onClickAction={_handleTabClick} />
     </View>
   );
 }

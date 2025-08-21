@@ -17,6 +17,7 @@ export const getAppTextStyles = (
       fontFamily: textStyle.fontFamily,
       color: colorString,
       fontSize: textStyle.fontSize,
+      lineHeight: textStyle.lineHeight,
     },
   });
 };

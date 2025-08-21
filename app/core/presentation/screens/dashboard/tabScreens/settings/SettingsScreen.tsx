@@ -10,11 +10,13 @@ import {AppButtonVariantType} from "../../../../common/appButton/data/AppButtonV
 import {AppButtonWidthType} from "../../../../common/appButton/data/AppButtonWidthType";
 import {AppHeaderMemoized} from "../../../../common/appHeader/AppHeader";
 import {KitchenUiSectionMemoized} from "../../../../common/kitchenUiSection/KitchenUiSection";
+import {getAppCommonStyles} from "../../../../common/styles/CommonStyles";
 import {getSettingsStyles} from "./styles/Settings.styles";
 
 export function SettingsScreen() {
   const {colors, theme, toggleTheme} = useAppTheme();
-  const stylesToUse = getSettingsStyles(colors);
+  const commonStyles = getAppCommonStyles(colors);
+  const settingsStyles = getSettingsStyles(colors);
 
   const isDarkTheme = theme === ThemeType.Dark;
 
@@ -25,8 +27,8 @@ export function SettingsScreen() {
   const _renderBodyContent = () => {
     return (
       <ScrollView
-        style={stylesToUse.scrollViewBodyContainer}
-        contentContainerStyle={stylesToUse.scrollViewContentContainer}>
+        style={settingsStyles.scrollViewContainer}
+        contentContainerStyle={settingsStyles.scrollViewContentContainer}>
         {/* Theme Switch Button */}
         <AppButtonMemoized
           colorsToUse={colors}
@@ -35,7 +37,7 @@ export function SettingsScreen() {
           variant={AppButtonVariantType.Flat}
           widthType={AppButtonWidthType.ContentWidthCenter}
           onClickAction={_handleThemeSwitchAction}
-          extraContainerStyle={stylesToUse.switchButtonContainerStyle}
+          extraContainerStyle={settingsStyles.switchButtonContainerStyle}
         />
 
         {/* Kitchen sync component */}
@@ -45,7 +47,7 @@ export function SettingsScreen() {
   };
 
   return (
-    <View style={stylesToUse.container}>
+    <View style={commonStyles.container}>
       <AppHeaderMemoized textString={AppBottomTabType.Settings.valueOf()} />
       {_renderBodyContent()}
     </View>

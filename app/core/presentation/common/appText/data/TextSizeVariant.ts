@@ -1,6 +1,10 @@
 import {FontFamilyConfig} from "../../../../../config/FontFamilyConfig";
 
-type TextStyle = {fontFamily: FontFamilyConfig; fontSize: number};
+type TextStyle = {
+  fontFamily: FontFamilyConfig;
+  fontSize: number;
+  lineHeight?: number;
+};
 
 export type TextVariant =
   | "base"
@@ -15,12 +19,16 @@ export type TextVariant =
 const textVariantMap: Record<TextVariant, TextStyle> = {
   base: {fontSize: 14, fontFamily: FontFamilyConfig.fontRegular},
   "4xl": {fontSize: 24, fontFamily: FontFamilyConfig.fontBold},
-  "3xl": {fontSize: 22, fontFamily: FontFamilyConfig.fontBold},
-  "2xl": {fontSize: 20, fontFamily: FontFamilyConfig.fontBold},
-  xl: {fontSize: 18, fontFamily: FontFamilyConfig.fontSemibold},
-  large: {fontSize: 16, fontFamily: FontFamilyConfig.fontSemibold},
-  sm: {fontSize: 12, fontFamily: FontFamilyConfig.fontRegular},
-  xs: {fontSize: 10, fontFamily: FontFamilyConfig.fontRegular},
+  "3xl": {fontSize: 22, fontFamily: FontFamilyConfig.fontBold, lineHeight: 26},
+  "2xl": {fontSize: 20, fontFamily: FontFamilyConfig.fontBold, lineHeight: 24},
+  xl: {fontSize: 18, fontFamily: FontFamilyConfig.fontBold, lineHeight: 24},
+  large: {
+    fontSize: 16,
+    fontFamily: FontFamilyConfig.fontSemibold,
+    lineHeight: 22,
+  },
+  sm: {fontSize: 12, fontFamily: FontFamilyConfig.fontRegular, lineHeight: 18},
+  xs: {fontSize: 10, fontFamily: FontFamilyConfig.fontRegular, lineHeight: 16},
 };
 
 export const getTextStyleBasedOnVariant = (variant: TextVariant): TextStyle => {

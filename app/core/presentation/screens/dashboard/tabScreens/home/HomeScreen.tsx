@@ -4,13 +4,13 @@ import {useAppTheme} from "../../../../../../theme/ThemeContext";
 import {AppBottomTabType} from "../../../../common/appBottomTabs/data/AppBottomTabEntity";
 import {AppHeaderMemoized} from "../../../../common/appHeader/AppHeader";
 import {AppLoadingContainerised} from "../../../../common/appLoadingIndicator/AppLoadingContainerised";
+import {getAppCommonStyles} from "../../../../common/styles/CommonStyles";
 import {UserList} from "./components/userList/UserList";
 import {useHomeScreenHook} from "./hooks/useHomeScreenHook";
-import {getHomeStyles} from "./styles/HomeScreen.styles";
 
 export function HomeScreen() {
   const {colors} = useAppTheme();
-  const stylesToUse = getHomeStyles(colors);
+  const commonStyles = getAppCommonStyles(colors);
 
   // Functions and state
   const {isLoading, users, isDataRefreshing, loadNextPage, triggerRefresh} =
@@ -26,7 +26,7 @@ export function HomeScreen() {
 
   const _renderBodyContent = () => {
     return (
-      <View style={stylesToUse.bodyContainer}>
+      <View style={commonStyles.bodyContainer}>
         {/* Loading */}
         {isLoading && (
           <AppLoadingContainerised
@@ -50,7 +50,7 @@ export function HomeScreen() {
   };
 
   return (
-    <View style={stylesToUse.container}>
+    <View style={commonStyles.container}>
       <AppHeaderMemoized textString={AppBottomTabType.Home.valueOf()} />
       {_renderBodyContent()}
     </View>
