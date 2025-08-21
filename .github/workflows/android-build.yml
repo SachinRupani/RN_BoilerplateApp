@@ -33,21 +33,17 @@ jobs:
           java-version: 17
 
       # Branch specific builds
-      - name: Build Android (Dev)
+      - name: Build Android (Dev apk)
         if: github.ref == 'refs/heads/dev'
         run: yarn buildAndroidDevApk
 
-      - name: Build Android (Staging)
+      - name: Build Android (Staging apk)
         if: github.ref == 'refs/heads/staging'
         run: yarn buildAndroidStagingApk
 
-      - name: Build Android (Prod - APK)
+      - name: Build Android (Prod apk and Bundle)
         if: github.ref == 'refs/heads/main'
-        run: yarn buildAndroidProdApk
-
-      - name: Build Android (Prod - Bundle)
-        if: github.ref == 'refs/heads/main'
-        run: yarn buildAndroidProdBundle
+        run: yarn buildAndroidProdApkAndBundle
 
       # Locate and upload outputs
       - name: Locate APKs/Bundles
