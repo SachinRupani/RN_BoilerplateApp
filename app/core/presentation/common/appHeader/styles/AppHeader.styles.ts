@@ -6,9 +6,11 @@ export const getAppHeaderStyles = (colors: AppColors) => {
   return StyleSheet.create({
     headerContainer: {
       height: 56,
-      justifyContent: "center",
-      paddingStart: 20,
+      flexDirection: "row",
+      paddingStart: 16,
       backgroundColor: isIos() ? colors.white : colors.transparent,
+      gap: 12,
+      alignItems: "center",
     },
   });
 };

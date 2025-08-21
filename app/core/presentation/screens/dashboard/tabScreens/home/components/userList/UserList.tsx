@@ -1,4 +1,6 @@
+import {useCallback} from "react";
 import {FlatList, ListRenderItem, RefreshControl} from "react-native";
+import {useAppNavigation} from "../../../../../../../../navigation/hooks/useAppNavigation";
 import {AppColors} from "../../../../../../../../theme/AppColors";
 import {UserEntity} from "../../../../../../../domain/entity/user/UserEntity";
 import {UserItemMemoized} from "../userItem/UserItem";
@@ -21,8 +23,20 @@ export const UserList = ({
 }: PropsUserList) => {
   const stylesToUse = getUserListStyles(colors);
 
+  const {navigateToUserDetails} = useAppNavigation();
+
+  const _handleUserItemClick = useCallback((userId: number) => {
+    navigateToUserDetails(String(userId));
+  }, []);
+
   const _renderItem: ListRenderItem<UserEntity> = ({item}) => {
-    return <UserItemMemoized colors={colors} user={item} />;
+    return (
+      <UserItemMemoized
+        colors={colors}
+        user={item}
+        onClickItem={_handleUserItemClick}
+      />
+    );
   };
 
   return (

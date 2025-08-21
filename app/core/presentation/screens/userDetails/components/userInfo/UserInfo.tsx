@@ -1,24 +1,18 @@
-import React, {memo} from "react";
+import {memo} from "react";
 import {View} from "react-native";
-import {AppColors} from "../../../../../../../../theme/AppColors";
-import {UserEntity} from "../../../../../../../domain/entity/user/UserEntity";
-import {AppImageMemoized} from "../../../../../../common/appImage/AppImage";
-import {AppTextMemoized} from "../../../../../../common/appText/AppText";
-import {AppTouchableSection} from "../../../../../../common/appTouchableSection/AppTouchableSection";
-import {getUserItemStyles} from "./styles/UserItem.styles";
+import {AppColors} from "../../../../../../theme/AppColors";
+import {UserEntity} from "../../../../../domain/entity/user/UserEntity";
+import {AppImageMemoized} from "../../../../common/appImage/AppImage";
+import {AppTextMemoized} from "../../../../common/appText/AppText";
+import {getUserInfoStyles} from "./styles/UserInfo.styles";
 
-type PropsUserItem = {
+type PropsUserInfo = {
   user: UserEntity;
   colors: AppColors;
-  onClickItem?: (userId: number) => void;
 };
 
-const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
-  const stylesToUse = getUserItemStyles(colors);
-
-  const _handleClick = () => {
-    onClickItem?.(user.id);
-  };
+const UserInfo = ({user, colors}: PropsUserInfo) => {
+  const stylesToUse = getUserInfoStyles(colors);
 
   const _renderUserInfo = () => {
     return (
@@ -27,7 +21,7 @@ const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
         <AppTextMemoized
           textString={`${user.firstName} ${user.lastName}`}
           textColorVariant={`text1`}
-          textVariant={`large`}
+          textVariant={`xl`}
         />
 
         {/* Email */}
@@ -41,9 +35,7 @@ const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
   };
 
   return (
-    <AppTouchableSection
-      styles={stylesToUse.container}
-      onPressAction={_handleClick}>
+    <View style={stylesToUse.container}>
       {/* Avatar Image */}
       <AppImageMemoized
         imageObj={{
@@ -53,13 +45,13 @@ const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
         imageStyles={stylesToUse.imageStyle}
       />
 
-      {/* Name and Email Info */}
+      {/* User Info */}
       {_renderUserInfo()}
-    </AppTouchableSection>
+    </View>
   );
 };
 
-export const UserItemMemoized = memo(UserItem, (prevProps, nextProps) => {
+export const UserInfoMemoized = memo(UserInfo, (prevProps, nextProps) => {
   return (
     prevProps?.user?.id === nextProps?.user?.id &&
     prevProps?.user?.firstName === nextProps?.user?.firstName &&

@@ -3,12 +3,7 @@ import {AppColors} from "../../../../../../../theme/AppColors";
 
 export const getSettingsStyles = (colors: AppColors) => {
   return StyleSheet.create({
-    container: {
-      flex: 1,
-      flexDirection: "column",
-    },
-
-    scrollViewBodyContainer: {
+    scrollViewContainer: {
       flex: 1,
       paddingTop: 16,
       paddingBottom: 24,
