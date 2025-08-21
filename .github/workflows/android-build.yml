@@ -1,0 +1,56 @@
+name: Android APK Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      flavor:
+        description: "Select which APK to build"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: "17"
+          distribution: "temurin"
+          cache: "gradle"
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22.x"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build APK
+        run: |
+          if [ "${{ github.event.inputs.flavor }}" = "dev" ]; then
+            yarn buildAndroidDevApk
+          elif [ "${{ github.event.inputs.flavor }}" = "staging" ]; then
+            yarn buildAndroidStagingApk
+          elif [ "${{ github.event.inputs.flavor }}" = "prod" ]; then
+            yarn buildAndroidProdApk
+          fi
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-${{ github.event.inputs.flavor }}
+          path: android/app/build/outputs/**/*.apk
+          retention-days: 7
