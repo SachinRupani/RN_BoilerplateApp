@@ -27,11 +27,3 @@ export function getSuccessDataState<T>(newData: T): DataState<T> {
     isLoading: false,
   };
 }
-
-export function getErrorState<T>(currentData?: T): DataState<T> {
-  return {
-    data: currentData,
-    error: undefined,
-    isLoading: false,
-  };
-}
