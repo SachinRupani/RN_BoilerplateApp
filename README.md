@@ -36,6 +36,16 @@ A minimal React Native boilerplate app with basic theming, navigation, and envir
 - ✅ **Basic Screens (Dashboard)**
   - 🏠 **Home Screen** → Home Tab
   - ⚙ **Settings Screen** → Theme switch button (Light/Dark)
+  -
+- ✅ **Home Screen**
+
+  - Added FlatList (UserList) and fetched data from Backend API
+  - Used RTK query for network calls (It supports caching out of the box)
+  - Three layers - Data, Domain, Presentation
+  - Upcoming - Error handling support
+
+- ✅ Used **react-native-fast-image**
+  - Made use of centralised Image component which uses fast image (good for caching and handling images). As it is centralised, can be easily updated to another component without making changes in the entire app.
 
 ## ⚠️ IMPORTANT
 
