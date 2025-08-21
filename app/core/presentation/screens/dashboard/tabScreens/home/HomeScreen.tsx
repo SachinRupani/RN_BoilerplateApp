@@ -13,10 +13,15 @@ export function HomeScreen() {
   const stylesToUse = getHomeStyles(colors);
 
   // Functions and state
-  const {isLoading, users, loadNextPage} = useHomeScreenHook();
+  const {isLoading, users, isDataRefreshing, loadNextPage, triggerRefresh} =
+    useHomeScreenHook();
 
   const _handleLoadMore = () => {
     loadNextPage();
+  };
+
+  const _handleRefresh = () => {
+    triggerRefresh();
   };
 
   const _renderBodyContent = () => {
@@ -36,6 +41,8 @@ export function HomeScreen() {
         <UserList
           listData={users}
           colors={colors}
+          isRefreshing={isDataRefreshing}
+          onRefresh={_handleRefresh}
           onLoadNextPage={_handleLoadMore}
         />
       </View>

@@ -1,28 +1,37 @@
 import {useEffect, useState} from "react";
+import {AppDefaults} from "../../../../config/AppDefaults";
 import {isEmptyArray} from "../../../../utils/GeneralUtils";
 import {useGetUserListQuery} from "../../../data/redux/rtkQuery/services/ApiService";
 import {UserEntity} from "../../entity/user/UserEntity";
 
-const INITIAL_PAGE = 1;
-const ITEMS_PER_PAGE = 5;
-
 export const useGetUsersApi = () => {
   const [users, setUsers] = useState<Array<UserEntity>>([]);
-  const [currentPage, setCurrentPage] = useState<number>(INITIAL_PAGE);
+  const [currentPage, setCurrentPage] = useState<number>(
+    AppDefaults.INITIAL_PAGE_NO,
+  );
 
-  const {isLoading, data, isFetching} = useGetUserListQuery({
+  const {isLoading, data, isFetching, refetch} = useGetUserListQuery({
     pageNo: currentPage,
-    itemsPerPage: ITEMS_PER_PAGE,
+    itemsPerPage: AppDefaults.ITEMS_PER_PAGE,
   });
 
   useEffect(() => {
     if (data && !isEmptyArray(data.users)) {
-      setUsers(isEmptyArray(users) ? data.users : users.concat(data.users));
+      // Update users state with new data
+      setUsers(prevUsers => {
+        const mergedUserList = [...prevUsers, ...data.users];
+        const uniqueUsers = Array.from(
+          new Map(mergedUserList.map(u => [u.id, u])).values(),
+        );
+        return uniqueUsers;
+      });
 
       // Just load 2nd page data after 1st page data load (one time action)
-      if (currentPage === INITIAL_PAGE) {
+      if (currentPage === AppDefaults.INITIAL_PAGE_NO) {
         loadNextPage();
       }
+
+      console.log(`DataLoaded_Page:${currentPage}`, JSON.stringify(data.users));
     }
   }, [data]);
 
@@ -32,9 +41,16 @@ export const useGetUsersApi = () => {
     }
   };
 
+  const refreshList = () => {
+    setUsers([]);
+    setCurrentPage(AppDefaults.INITIAL_PAGE_NO);
+    refetch();
+  };
+
   return {
     isLoading,
     users,
     loadNextPage,
+    refreshList,
   };
 };
