@@ -19,6 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Ensure gradlew is executable
+        run: chmod +x android/gradlew
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
