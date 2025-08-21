@@ -34,9 +34,10 @@ A minimal React Native boilerplate app with basic theming, navigation, and envir
   - 🍏 **iOS:** Upcoming feature — config-based app variants planned
 
 - ✅ **Basic Screens (Dashboard)**
+
   - 🏠 **Home Screen** → Home Tab
   - ⚙ **Settings Screen** → Theme switch button (Light/Dark)
-  -
+
 - ✅ **Home Screen**
 
   - Added FlatList (UserList) and fetched data from Backend API
@@ -69,15 +70,15 @@ Check `package.json` for all the important scripts
 #### Dark Theme
 
 <p>
-  <img src="./screenshots/screen_1_dark.png" alt="Home Dark Theme" width="45%"/>
-  <img src="./screenshots/screen_2_dark.png" alt="Settings Dark Theme" width="45%"/>
+  <img src="./screenshots/screenshot_1_dark.png" alt="Home Dark Theme" width="45%"/>
+  <img src="./screenshots/screenshot_2_dark.png" alt="Settings Dark Theme" width="45%"/>
 </p>
 
 #### Light Theme
 
 <p>
-  <img src="./screenshots/screen_1_light.png" alt="Home Light Theme" width="45%"/>
-  <img src="./screenshots/screen_2_light.png" alt="Settings Light Theme" width="45%"/>
+  <img src="./screenshots/screenshot_1_light.png" alt="Home Light Theme" width="45%"/>
+  <img src="./screenshots/screenshot_2_light.png" alt="Settings Light Theme" width="45%"/>
 </p>
 
 ## ❤ Show your support
