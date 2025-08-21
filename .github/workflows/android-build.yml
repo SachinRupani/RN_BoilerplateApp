@@ -1,17 +1,11 @@
-name: Android APK Build
+name: Android APK Build (Branch Based)
 
 on:
-  workflow_dispatch:
-    inputs:
-      flavor:
-        description: "Select which APK to build"
-        required: true
-        default: "dev"
-        type: choice
-        options:
-          - dev
-          - staging
-          - prod
+  push:
+    branches:
+      - dev
+      - staging
+      - main
 
 jobs:
   build:
@@ -19,17 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Ensure gradlew is executable
-        run: chmod +x android/gradlew
-
-      - name: Set up Java
+      - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
           java-version: "17"
           distribution: "temurin"
           cache: "gradle"
 
-      - name: Set up Node.js
+      - name: Set up Node.js 22
         uses: actions/setup-node@v3
         with:
           node-version: "22.x"
@@ -38,19 +29,40 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build APK
+      - name: Ensure gradlew is executable
+        run: chmod +x android/gradlew
+
+      - name: Build APK / Bundle
         run: |
-          if [ "${{ github.event.inputs.flavor }}" = "dev" ]; then
+          if [[ "${GITHUB_REF##*/}" == "dev" ]]; then
+            echo "➡️ Building Dev APK..."
             yarn buildAndroidDevApk
-          elif [ "${{ github.event.inputs.flavor }}" = "staging" ]; then
+          elif [[ "${GITHUB_REF##*/}" == "staging" ]]; then
+            echo "➡️ Building Staging APK..."
             yarn buildAndroidStagingApk
-          elif [ "${{ github.event.inputs.flavor }}" = "prod" ]; then
+          elif [[ "${GITHUB_REF##*/}" == "main" ]]; then
+            echo "➡️ Building Prod APK and Bundle..."
             yarn buildAndroidProdApk
+            yarn buildAndroidProdBundle
           fi
 
-      - name: Upload APK artifact
+      - name: Locate APKs/Bundles
+        id: find_outputs
+        shell: bash
+        run: |
+          # Collect both APKs and Bundles
+          OUTPUT_PATHS=$(ls -t android/app/build/outputs/{apk,bundle}/**/*.{apk,aab} 2>/dev/null || true)
+          if [ -z "$OUTPUT_PATHS" ]; then
+            echo "❌ No APK/AAB found!"
+            exit 1
+          fi
+          echo "OUTPUT_PATHS=$OUTPUT_PATHS" >> $GITHUB_ENV
+          echo "✅ Found outputs:"
+          echo "$OUTPUT_PATHS"
+
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: apk-${{ github.event.inputs.flavor }}
-          path: android/app/build/outputs/**/*.apk
+          name: outputs-${{ github.ref_name }}
+          path: ${{ env.OUTPUT_PATHS }}
           retention-days: 7
