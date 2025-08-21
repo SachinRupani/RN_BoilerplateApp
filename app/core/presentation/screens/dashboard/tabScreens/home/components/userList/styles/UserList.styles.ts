@@ -7,6 +7,7 @@ export const getUserListStyles = (colors: AppColors) => {
       flex: 1,
     },
     listContentContainerStyle: {
+      paddingTop: 16,
       paddingHorizontal: 16,
       paddingBottom: 24,
     },

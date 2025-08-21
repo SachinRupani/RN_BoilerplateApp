@@ -6,21 +6,22 @@ export const getSettingsStyles = (colors: AppColors) => {
     container: {
       flex: 1,
       flexDirection: "column",
-      gap: 8,
     },
 
     scrollViewBodyContainer: {
       flex: 1,
-      flexDirection: "column",
+      paddingTop: 16,
+      paddingBottom: 24,
     },
 
     scrollViewContentContainer: {
+      flex: 1,
+      flexDirection: "column",
       paddingHorizontal: 20,
-      paddingVertical: 8,
     },
 
     switchButtonContainerStyle: {
-      marginBottom: 16,
+      marginVertical: 16,
     },
   });
 };

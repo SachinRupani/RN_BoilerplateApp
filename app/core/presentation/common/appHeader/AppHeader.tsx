@@ -1,8 +1,9 @@
 import {memo} from "react";
 import {View} from "react-native";
+import {useAppTheme} from "../../../../theme/ThemeContext";
 import {AppTextMemoized} from "../appText/AppText";
 import {TextColorVariant} from "../appText/data/TextColorVariant";
-import {appHeaderStyles} from "./styles/AppHeader.styles";
+import {getAppHeaderStyles} from "./styles/AppHeader.styles";
 
 type PropsAppHeader = {
   textString: string;
@@ -15,7 +16,8 @@ const AppHeader = ({
   textColorVariant,
   headerVariant,
 }: PropsAppHeader) => {
-  const stylesToUse = appHeaderStyles;
+  const {colors} = useAppTheme();
+  const stylesToUse = getAppHeaderStyles(colors);
   return (
     <View style={stylesToUse.headerContainer}>
       <AppTextMemoized
