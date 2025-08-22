@@ -1,13 +1,13 @@
 import {configureStore} from "@reduxjs/toolkit";
 import {setupListeners} from "@reduxjs/toolkit/query";
-import {userApi} from "./rtkQuery/services/ApiService";
+import {apiService} from "../dataSource/ApiService";
 
 export const store = configureStore({
   reducer: {
-    [userApi.reducerPath]: userApi.reducer,
+    [apiService.reducerPath]: apiService.reducer,
   },
   middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(userApi.middleware),
+    getDefaultMiddleware().concat(apiService.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

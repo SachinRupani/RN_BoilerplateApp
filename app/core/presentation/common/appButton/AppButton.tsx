@@ -1,4 +1,4 @@
-import {memo, useMemo} from "react";
+import {memo, useCallback, useMemo, useRef} from "react";
 import {Text, TouchableOpacity} from "react-native";
 import {AppColors} from "../../../../theme/AppColors";
 import {
@@ -38,10 +38,21 @@ const AppButton = ({
 
   const stylesToUse = getAppButtonStyles(colorSet, variant);
 
+  const lastClickRef = useRef<number>(0);
+
+  const handlePress = useCallback(() => {
+    const now = Date.now();
+    if (now - lastClickRef.current > 700) {
+      lastClickRef.current = now;
+      console.log("AppButton clicked");
+      onClickAction?.();
+    }
+  }, [onClickAction]);
+
   return (
     <TouchableOpacity
       activeOpacity={0.7}
-      onPress={onClickAction}
+      onPress={handlePress}
       style={[
         stylesToUse.buttonContainer,
         stylesToUse[widthType] ?? null,
