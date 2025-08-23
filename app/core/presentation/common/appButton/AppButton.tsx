@@ -1,6 +1,7 @@
-import {memo, useCallback, useMemo, useRef} from "react";
+import {memo, useMemo} from "react";
 import {Text, TouchableOpacity} from "react-native";
 import {AppColors} from "../../../../theme/AppColors";
+import {useThrottle} from "../_hooks/useThrottle";
 import {
   AppButtonColorSet,
   getPrimaryButtonColorSet,
@@ -38,21 +39,12 @@ const AppButton = ({
 
   const stylesToUse = getAppButtonStyles(colorSet, variant);
 
-  const lastClickRef = useRef<number>(0);
-
-  const handlePress = useCallback(() => {
-    const now = Date.now();
-    if (now - lastClickRef.current > 700) {
-      lastClickRef.current = now;
-      console.log("AppButton clicked");
-      onClickAction?.();
-    }
-  }, [onClickAction]);
+  const throttledPressAction = useThrottle(onClickAction, 700);
 
   return (
     <TouchableOpacity
       activeOpacity={0.7}
-      onPress={handlePress}
+      onPress={throttledPressAction}
       style={[
         stylesToUse.buttonContainer,
         stylesToUse[widthType] ?? null,
