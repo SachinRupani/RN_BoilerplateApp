@@ -1,8 +1,6 @@
-import {useGetUserDetailsQuery} from "../../../../data/redux/rtkQuery/services/ApiService";
+import {useGetUserDetailsQuery} from "../../../../data/dataSource/collections/UserEndpoints";
 
 export const useUserDetailsScreenHook = (userId: string) => {
-  // This hook can be used to manage the state and logic for the UserDetailsScreen
-
   const {isLoading, data} = useGetUserDetailsQuery(userId);
 
   return {

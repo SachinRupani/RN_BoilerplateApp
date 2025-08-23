@@ -17,8 +17,12 @@ export type TextVariant =
   | "4xl";
 
 const textVariantMap: Record<TextVariant, TextStyle> = {
-  base: {fontSize: 14, fontFamily: FontFamilyConfig.fontRegular},
-  "4xl": {fontSize: 24, fontFamily: FontFamilyConfig.fontBold},
+  base: {
+    fontSize: 14,
+    fontFamily: FontFamilyConfig.fontRegular,
+    lineHeight: 18,
+  },
+  "4xl": {fontSize: 24, fontFamily: FontFamilyConfig.fontBold, lineHeight: 28},
   "3xl": {fontSize: 22, fontFamily: FontFamilyConfig.fontBold, lineHeight: 26},
   "2xl": {fontSize: 20, fontFamily: FontFamilyConfig.fontBold, lineHeight: 24},
   xl: {fontSize: 18, fontFamily: FontFamilyConfig.fontBold, lineHeight: 24},

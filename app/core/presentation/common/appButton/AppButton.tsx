@@ -1,6 +1,7 @@
 import {memo, useMemo} from "react";
 import {Text, TouchableOpacity} from "react-native";
 import {AppColors} from "../../../../theme/AppColors";
+import {useThrottle} from "../_hooks/useThrottle";
 import {
   AppButtonColorSet,
   getPrimaryButtonColorSet,
@@ -38,10 +39,12 @@ const AppButton = ({
 
   const stylesToUse = getAppButtonStyles(colorSet, variant);
 
+  const throttledPressAction = useThrottle(onClickAction, 700);
+
   return (
     <TouchableOpacity
       activeOpacity={0.7}
-      onPress={onClickAction}
+      onPress={throttledPressAction}
       style={[
         stylesToUse.buttonContainer,
         stylesToUse[widthType] ?? null,
