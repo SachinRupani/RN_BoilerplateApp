@@ -5,6 +5,7 @@ export interface AppButtonColorSet {
   bgColor: string;
   foregroundColor: string;
   borderColor: string;
+  loadingIndicatorColor: string;
 }
 
 export const getPrimaryButtonColorSet = (
@@ -17,6 +18,7 @@ export const getPrimaryButtonColorSet = (
         bgColor: colors.transparent,
         foregroundColor: colors.primary,
         borderColor: colors.primary,
+        loadingIndicatorColor: colors.primary,
       };
 
     case AppButtonVariantType.Flat:
@@ -24,6 +26,7 @@ export const getPrimaryButtonColorSet = (
         bgColor: colors.primaryLight,
         foregroundColor: colors.primary,
         borderColor: colors.transparent,
+        loadingIndicatorColor: colors.primary,
       };
 
     default:
@@ -31,6 +34,7 @@ export const getPrimaryButtonColorSet = (
         bgColor: colors.primary,
         foregroundColor: colors.textOnPrimary,
         borderColor: colors.transparent,
+        loadingIndicatorColor: colors.textOnPrimary,
       };
   }
 };
@@ -45,6 +49,7 @@ export const getSecondaryButtonColorSet = (
         bgColor: colors.transparent,
         foregroundColor: colors.secondary,
         borderColor: colors.secondary,
+        loadingIndicatorColor: colors.secondary,
       };
 
     case AppButtonVariantType.Flat:
@@ -52,6 +57,7 @@ export const getSecondaryButtonColorSet = (
         bgColor: colors.secondaryLight,
         foregroundColor: colors.secondary,
         borderColor: colors.transparent,
+        loadingIndicatorColor: colors.secondary,
       };
 
     default:
@@ -59,6 +65,7 @@ export const getSecondaryButtonColorSet = (
         bgColor: colors.secondary,
         foregroundColor: colors.textOnSecondary,
         borderColor: colors.transparent,
+        loadingIndicatorColor: colors.textOnSecondary,
       };
   }
 };

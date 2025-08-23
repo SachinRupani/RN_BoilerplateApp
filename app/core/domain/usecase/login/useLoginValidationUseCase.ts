@@ -1,29 +1,55 @@
-import {useMemo, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
+import {
+  isValidEmail,
+  isValidPassword,
+  isValidStringWithRegex,
+} from "../../../../utils/ValidationUtils";
+import {defaultLoginEntity, LoginEntity} from "../../entity/login/LoginEntity";
 
 export const useLoginValidationUseCase = () => {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  const [loginEntity, setLoginEntity] =
+    useState<LoginEntity>(defaultLoginEntity);
 
-  function areInputsValid(): boolean {
-    return email.trim().length > 0 && password.trim().length > 0;
-  }
+  const areAllInputsValid = useMemo(() => {
+    return (
+      isValidPassword(loginEntity.password) && isValidEmail(loginEntity.email)
+    );
+  }, [loginEntity.email, loginEntity.password]);
 
-  const shouldEnableLoginButton = useMemo(() => {
-    return areInputsValid();
-  }, [email, password]);
+  useEffect(() => {
+    const newRulesState = loginEntity.passwordRules.map(rule => {
+      return {
+        ...rule,
+        isSatisfied: isValidStringWithRegex(
+          loginEntity.password,
+          rule.allowedRegex,
+        ),
+      };
+    });
+
+    setLoginEntity({
+      ...loginEntity,
+      passwordRules: newRulesState,
+    });
+  }, [loginEntity.password]);
 
   const updateEmail = (input: string) => {
-    setEmail(input);
+    setLoginEntity({
+      ...loginEntity,
+      email: input,
+    });
   };
 
   const updatePassword = (input: string) => {
-    setPassword(input);
+    setLoginEntity({
+      ...loginEntity,
+      password: input,
+    });
   };
 
   return {
-    email,
-    password,
-    shouldEnableLoginButton,
+    loginEntity,
+    areAllInputsValid,
     updateEmail,
     updatePassword,
   };

@@ -4,6 +4,7 @@ export type TextColorVariant =
   | "text1"
   | "text2"
   | "text3"
+  | "text4"
   | "primary"
   | "secondary"
   | "error"
@@ -21,6 +22,8 @@ export const getDesiredTextColor = (
       return colors.text2;
     case "text3":
       return colors.text3;
+    case "text4":
+      return colors.text4;
     case "primary":
       return colors.primary;
     case "secondary":

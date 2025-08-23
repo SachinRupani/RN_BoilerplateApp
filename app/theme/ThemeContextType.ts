@@ -1,5 +1,5 @@
-import {AppColors, LightColors} from './AppColors';
-import {ThemeType} from './ThemeType';
+import {AppColors, LightColors} from "./AppColors";
+import {ThemeType} from "./ThemeType";
 
 export interface ThemeContextType {
   theme: ThemeType;
