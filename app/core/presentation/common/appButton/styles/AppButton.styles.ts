@@ -19,6 +19,10 @@ export const getAppButtonStyles = (
       alignItems: "center",
     },
 
+    buttonContainerDisabled: {
+      opacity: 0.6,
+    },
+
     buttonText: {
       fontSize: 14,
       color: colorSet.foregroundColor,

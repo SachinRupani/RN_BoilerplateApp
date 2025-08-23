@@ -2,6 +2,7 @@ import {memo, useMemo} from "react";
 import {Text, TouchableOpacity} from "react-native";
 import {AppColors} from "../../../../theme/AppColors";
 import {useThrottle} from "../_hooks/useThrottle";
+import {AppLoadingIndicator} from "../appLoadingIndicator/AppLoadingIndicator";
 import {
   AppButtonColorSet,
   getPrimaryButtonColorSet,
@@ -14,6 +15,8 @@ import {getAppButtonStyles} from "./styles/AppButton.styles";
 
 type PropsAppButton = {
   colorsToUse: AppColors;
+  isLoading?: boolean;
+  isButtonDisabled?: boolean;
   textString: string;
   colorType?: AppButtonColorType;
   variant?: AppButtonVariantType;
@@ -24,6 +27,8 @@ type PropsAppButton = {
 
 const AppButton = ({
   colorsToUse,
+  isLoading,
+  isButtonDisabled = false,
   textString,
   colorType = AppButtonColorType.Primary,
   variant = AppButtonVariantType.Main,
@@ -41,16 +46,37 @@ const AppButton = ({
 
   const throttledPressAction = useThrottle(onClickAction, 700);
 
+  const _handleButtonPress = () => {
+    if (!isLoading) {
+      throttledPressAction();
+    }
+  };
+
+  const _renderButtonLoading = () => {
+    return (
+      <AppLoadingIndicator
+        indicatorSize="small"
+        indicatorColor={colorSet.loadingIndicatorColor}
+      />
+    );
+  };
+
+  const _renderButtonText = () => {
+    return <Text style={stylesToUse.buttonText}>{textString}</Text>;
+  };
+
   return (
     <TouchableOpacity
+      disabled={isButtonDisabled || isLoading}
       activeOpacity={0.7}
-      onPress={throttledPressAction}
+      onPress={_handleButtonPress}
       style={[
         stylesToUse.buttonContainer,
         stylesToUse[widthType] ?? null,
+        isButtonDisabled ? stylesToUse.buttonContainerDisabled : null,
         extraContainerStyle ? extraContainerStyle : null,
       ]}>
-      <Text style={stylesToUse.buttonText}>{textString}</Text>
+      {isLoading ? _renderButtonLoading() : _renderButtonText()}
     </TouchableOpacity>
   );
 };
