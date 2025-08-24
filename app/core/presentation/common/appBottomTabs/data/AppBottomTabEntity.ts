@@ -1,8 +1,8 @@
-import {PropsAppIcon} from "../../appIcon/AppIcon";
+import {PropsAppIcon} from '../../appIcon/AppIcon';
 
 export enum AppBottomTabType {
-  Home = "Home",
-  Settings = "Settings",
+  Home = 'Home',
+  Settings = 'Settings',
 }
 
 export interface AppBottomTabEntity {

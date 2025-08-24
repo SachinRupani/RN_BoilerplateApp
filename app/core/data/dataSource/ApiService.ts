@@ -1,13 +1,13 @@
-import {BaseQueryFn} from "@reduxjs/toolkit/query";
-import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import {selectedEnvironment} from "../../../config/environment/SelectedEnvironment";
+import {BaseQueryFn} from '@reduxjs/toolkit/query';
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
+import {selectedEnvironment} from '../../../config/environment/SelectedEnvironment';
 
 // Create a wrapped base query for logging purpose
 const loggingBaseQuery =
   (baseQuery: ReturnType<typeof fetchBaseQuery>): BaseQueryFn =>
   async (args, api, extraOptions) => {
     if (selectedEnvironment.shouldLogNetworkRequestResponse) {
-      console.log("📡 Request:", {
+      console.log('📡 Request:', {
         ...args,
         url: `${selectedEnvironment.baseUrl}${args.url}`,
       });
@@ -15,13 +15,13 @@ const loggingBaseQuery =
 
     const result = await baseQuery(args, api, extraOptions);
 
-    if ("error" in result) {
+    if ('error' in result) {
       if (selectedEnvironment.shouldLogNetworkErrors) {
-        console.log("❌ Error Response:", result.error);
+        console.log('❌ Error Response:', result.error);
       }
     } else {
       if (selectedEnvironment.shouldLogNetworkRequestResponse) {
-        console.log("✅ Response:", result.data);
+        console.log('✅ Response:', result.data);
       }
     }
 
@@ -29,7 +29,7 @@ const loggingBaseQuery =
   };
 
 export const apiService = createApi({
-  reducerPath: "apiService",
+  reducerPath: 'apiService',
   baseQuery: loggingBaseQuery(
     fetchBaseQuery({
       baseUrl: `${selectedEnvironment.baseUrl}`,
@@ -37,8 +37,8 @@ export const apiService = createApi({
         // From the getState() you can also get the auth token and set in headers if required
         //const token = (getState() as RootState).auth.token
 
-        headers.set("x-api-key", selectedEnvironment.apiKey);
-        headers.set("Content-Type", "application/json");
+        headers.set('x-api-key', selectedEnvironment.apiKey);
+        headers.set('Content-Type', 'application/json');
         return headers;
       },
     }),

@@ -1,13 +1,13 @@
-import {useCallback, useState} from "react";
-import {AppColors} from "../../../../../../theme/AppColors";
+import {useCallback, useState} from 'react';
+import {AppColors} from '../../../../../../theme/AppColors';
 import {
   AppBottomTabEntity,
   AppBottomTabType,
-} from "../../../../common/appBottomTabs/data/AppBottomTabEntity";
+} from '../../../../common/appBottomTabs/data/AppBottomTabEntity';
 import {
   defaultTabs,
   getDesiredIconProps,
-} from "../../../../common/appBottomTabs/data/BottomTabsData";
+} from '../../../../common/appBottomTabs/data/BottomTabsData';
 
 export const useDashboardHook = (appColors: AppColors) => {
   const [tabs, setTabs] = useState<Array<AppBottomTabEntity>>(

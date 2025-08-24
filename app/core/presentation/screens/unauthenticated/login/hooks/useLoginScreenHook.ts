@@ -1,5 +1,5 @@
-import {useMemo} from "react";
-import {useLoginValidationUseCase} from "../../../../../domain/usecase/login/useLoginValidationUseCase";
+import {useMemo} from 'react';
+import {useLoginValidationUseCase} from '../../../../../domain/usecase/login/useLoginValidationUseCase';
 
 export const useLoginScreenHook = () => {
   const {loginEntity, areAllInputsValid, updateEmail, updatePassword} =

@@ -1,7 +1,7 @@
-import {StyleSheet} from "react-native";
-import {AppColors} from "../../../../../../../../../theme/AppColors";
+import {StyleSheet} from 'react-native';
+import {AppColors} from '../../../../../../../../../../theme/AppColors';
 
-export const getUserListStyles = (colors: AppColors) => {
+export const getUserListStyles = (_: AppColors) => {
   return StyleSheet.create({
     listStyle: {
       flex: 1,

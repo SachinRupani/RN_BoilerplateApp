@@ -1,7 +1,7 @@
-import {StyleSheet} from "react-native";
-import {AppColors} from "../../../../../../../../theme/AppColors";
+import {StyleSheet} from 'react-native';
+import {AppColors} from '../../../../../../../../theme/AppColors';
 
-export const getSettingsStyles = (colors: AppColors) => {
+export const getSettingsStyles = (_: AppColors) => {
   return StyleSheet.create({
     scrollViewContainer: {
       flex: 1,
@@ -11,7 +11,7 @@ export const getSettingsStyles = (colors: AppColors) => {
 
     scrollViewContentContainer: {
       flex: 1,
-      flexDirection: "column",
+      flexDirection: 'column',
       paddingHorizontal: 20,
     },
 

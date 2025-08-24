@@ -1,8 +1,8 @@
-import {StyleSheet, View} from "react-native";
+import {StyleSheet, View} from 'react-native';
 import {
   AppLoadingIndicator,
   PropsAppLoadingIndicator,
-} from "./AppLoadingIndicator";
+} from './AppLoadingIndicator';
 
 type PropsAppLoadingContainerised = {
   propsLoadingIndicator: PropsAppLoadingIndicator;
@@ -21,7 +21,7 @@ export const AppLoadingContainerised = ({
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

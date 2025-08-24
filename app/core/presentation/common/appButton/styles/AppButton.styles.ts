@@ -1,7 +1,7 @@
-import {StyleSheet} from "react-native";
-import {FontFamilyConfig} from "../../../../../config/FontFamilyConfig";
-import {AppButtonColorSet} from "../data/AppButtonColorSet";
-import {AppButtonVariantType} from "../data/AppButtonVariantType";
+import {StyleSheet} from 'react-native';
+import {FontFamilyConfig} from '../../../../../config/FontFamilyConfig';
+import {AppButtonColorSet} from '../data/AppButtonColorSet';
+import {AppButtonVariantType} from '../data/AppButtonVariantType';
 
 export const getAppButtonStyles = (
   colorSet: AppButtonColorSet,
@@ -15,8 +15,8 @@ export const getAppButtonStyles = (
       backgroundColor: colorSet.bgColor,
       borderWidth: isOutlineVariant ? 2 : 0,
       borderColor: colorSet.borderColor,
-      justifyContent: "center",
-      alignItems: "center",
+      justifyContent: 'center',
+      alignItems: 'center',
     },
 
     buttonContainerDisabled: {
@@ -31,19 +31,19 @@ export const getAppButtonStyles = (
     },
 
     buttonFullWidth: {
-      alignSelf: "stretch",
+      alignSelf: 'stretch',
     },
 
     buttonContentWidthStart: {
-      alignSelf: "flex-start",
+      alignSelf: 'flex-start',
     },
 
     buttonContentWidthEnd: {
-      alignSelf: "flex-end",
+      alignSelf: 'flex-end',
     },
 
     buttonContentWidthCenter: {
-      alignSelf: "center",
+      alignSelf: 'center',
     },
   });
 };

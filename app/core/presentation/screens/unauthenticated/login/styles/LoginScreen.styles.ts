@@ -1,21 +1,21 @@
-import {StyleSheet} from "react-native";
-import {AppColors} from "../../../../../../theme/AppColors";
+import {StyleSheet} from 'react-native';
+import {AppColors} from '../../../../../../theme/AppColors';
 
 export const getLoginScreenStyles = (colors: AppColors) => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      alignItems: "center",
+      alignItems: 'center',
       paddingHorizontal: 16,
     },
 
     loginCardContainer: {
-      width: "100%",
+      width: '100%',
       backgroundColor: colors.white,
       paddingHorizontal: 16,
       paddingVertical: 24,
       borderRadius: 12,
-      flexDirection: "column",
+      flexDirection: 'column',
       gap: 16,
 
       elevation: 3, //android

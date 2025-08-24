@@ -1,4 +1,4 @@
-import {PasswordRuleEntity, defaultPasswordRules} from "./PasswordRuleEntity";
+import {PasswordRuleEntity, defaultPasswordRules} from './PasswordRuleEntity';
 
 export interface LoginEntity {
   email: string;
@@ -7,7 +7,7 @@ export interface LoginEntity {
 }
 
 export const defaultLoginEntity: LoginEntity = {
-  email: "",
-  password: "",
+  email: '',
+  password: '',
   passwordRules: defaultPasswordRules,
 };

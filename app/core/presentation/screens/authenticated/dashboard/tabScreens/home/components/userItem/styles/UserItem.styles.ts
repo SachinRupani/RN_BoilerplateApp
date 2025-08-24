@@ -1,10 +1,10 @@
-import {StyleSheet} from "react-native";
-import {AppColors} from "../../../../../../../../../../theme/AppColors";
+import {StyleSheet} from 'react-native';
+import {AppColors} from '../../../../../../../../../../theme/AppColors';
 
 export const getUserItemStyles = (colors: AppColors) => {
   return StyleSheet.create({
     container: {
-      flexDirection: "row",
+      flexDirection: 'row',
       padding: 16,
       backgroundColor: colors.white,
       gap: 8,
@@ -20,7 +20,7 @@ export const getUserItemStyles = (colors: AppColors) => {
 
     infoContainer: {
       flex: 1,
-      flexDirection: "column",
+      flexDirection: 'column',
       gap: 4,
     },
   });

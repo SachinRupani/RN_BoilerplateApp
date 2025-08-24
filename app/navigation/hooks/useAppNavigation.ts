@@ -2,9 +2,9 @@ import {
   NavigationProp,
   StackActions,
   useNavigation,
-} from "@react-navigation/native";
-import {ScreenNames} from "../ScreenNames";
-import {RootStackParamList} from "../types/RootStackParamList";
+} from '@react-navigation/native';
+import {ScreenNames} from '../ScreenNames';
+import {RootStackParamList} from '../types/RootStackParamList';
 
 export const useAppNavigation = () => {
   // This hook can be used to encapsulate navigation logic or state management

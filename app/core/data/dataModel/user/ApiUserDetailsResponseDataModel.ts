@@ -1,4 +1,4 @@
-import {ApiUserDataModel} from "./ApiUserDataModel";
+import {ApiUserDataModel} from './ApiUserDataModel';
 
 export interface ApiUserDetailsResponseDataModel {
   data: ApiUserDataModel;

@@ -1,10 +1,10 @@
-import {memo, useRef} from "react";
-import {KeyboardTypeOptions, TextInput, View} from "react-native";
-import {AppDefaults} from "../../../../config/AppDefaults";
-import {AppColors} from "../../../../theme/AppColors";
-import {getSafeString} from "../../../../utils/GeneralUtils";
-import {AppTextMemoized} from "../appText/AppText";
-import {getAppTextInputStyles} from "./styles/AppTextInput.styles";
+import {memo, useRef} from 'react';
+import {KeyboardTypeOptions, TextInput, View} from 'react-native';
+import {AppDefaults} from '../../../../config/AppDefaults';
+import {AppColors} from '../../../../theme/AppColors';
+import {getSafeString} from '../../../../utils/GeneralUtils';
+import {AppTextMemoized} from '../appText/AppText';
+import {getAppTextInputStyles} from './styles/AppTextInput.styles';
 
 export type PropsAppTextInput = {
   colors: AppColors;
@@ -14,6 +14,7 @@ export type PropsAppTextInput = {
   initialValue?: string;
   isSecureEntry?: boolean;
   placeholderText?: string;
+  testID?: string;
   onChangeText?: (text: string) => void;
 };
 
@@ -21,13 +22,14 @@ const AppTextInput = ({
   colors,
   keyboardType,
   characterLimit,
-  placeholderText = "",
-  initialValue = "",
+  placeholderText = '',
+  initialValue = '',
   isSecureEntry = false,
   label,
+  testID,
   onChangeText,
 }: PropsAppTextInput) => {
-  const valueRef = useRef<string>(initialValue ?? "");
+  const valueRef = useRef<string>(initialValue ?? '');
 
   const textInputStyles = getAppTextInputStyles(colors);
 
@@ -47,6 +49,7 @@ const AppTextInput = ({
       {/* Text Input */}
 
       <TextInput
+        testID={testID}
         style={textInputStyles.textInputStyle}
         placeholderTextColor={colors.text4}
         keyboardType={keyboardType}

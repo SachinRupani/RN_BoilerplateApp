@@ -1,13 +1,13 @@
-import {useCallback, useMemo} from "react";
-import {View} from "react-native";
+import {useCallback, useMemo} from 'react';
+import {View} from 'react-native';
 
-import {useAppTheme} from "../../../../../theme/ThemeContext";
-import {AppBottomTabsMemoized} from "../../../common/appBottomTabs/AppBottomTabs";
-import {AppBottomTabType} from "../../../common/appBottomTabs/data/AppBottomTabEntity";
-import {useDashboardHook} from "./hooks/useDashboardHook";
-import {getDashboardStyles} from "./styles/Dashboard.styles";
-import {HomeScreen} from "./tabScreens/home/HomeScreen";
-import {SettingsScreen} from "./tabScreens/settings/SettingsScreen";
+import {useAppTheme} from '../../../../../theme/ThemeContext';
+import {AppBottomTabsMemoized} from '../../../common/appBottomTabs/AppBottomTabs';
+import {AppBottomTabType} from '../../../common/appBottomTabs/data/AppBottomTabEntity';
+import {useDashboardHook} from './hooks/useDashboardHook';
+import {getDashboardStyles} from './styles/Dashboard.styles';
+import {HomeScreen} from './tabScreens/home/HomeScreen';
+import {SettingsScreen} from './tabScreens/settings/SettingsScreen';
 
 export function Dashboard() {
   const {colors} = useAppTheme();
@@ -46,7 +46,11 @@ export function Dashboard() {
       <View style={stylesToUse.tabContentContainer}>{_renderTabContent()}</View>
 
       {/* Bottom Tabs */}
-      <AppBottomTabsMemoized tabs={tabs} onClickAction={_handleTabClick} />
+      <AppBottomTabsMemoized
+        testID={'idDashboardTabs'}
+        tabs={tabs}
+        onClickAction={_handleTabClick}
+      />
     </View>
   );
 }

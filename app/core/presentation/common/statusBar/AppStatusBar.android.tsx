@@ -1,6 +1,6 @@
-import {StatusBar} from "react-native";
-import {useAppTheme} from "../../../../theme/ThemeContext";
-import {ThemeType} from "../../../../theme/ThemeType";
+import {StatusBar} from 'react-native';
+import {useAppTheme} from '../../../../theme/ThemeContext';
+import {ThemeType} from '../../../../theme/ThemeType';
 
 const AppStatusBar = () => {
   const {colors, theme} = useAppTheme();
@@ -8,7 +8,7 @@ const AppStatusBar = () => {
 
   return (
     <StatusBar
-      barStyle={isDarkTheme ? `light-content` : `dark-content`}
+      barStyle={isDarkTheme ? 'light-content' : 'dark-content'}
       backgroundColor={colors.background}
     />
   );

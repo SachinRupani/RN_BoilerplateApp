@@ -1,10 +1,10 @@
-import {useEffect, useMemo, useState} from "react";
+import {useEffect, useMemo, useState} from 'react';
 import {
   isValidEmail,
   isValidPassword,
   isValidStringWithRegex,
-} from "../../../../utils/ValidationUtils";
-import {defaultLoginEntity, LoginEntity} from "../../entity/login/LoginEntity";
+} from '../../../../utils/ValidationUtils';
+import {defaultLoginEntity, LoginEntity} from '../../entity/login/LoginEntity';
 
 export const useLoginValidationUseCase = () => {
   const [loginEntity, setLoginEntity] =

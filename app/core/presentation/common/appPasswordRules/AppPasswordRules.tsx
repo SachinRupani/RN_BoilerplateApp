@@ -1,25 +1,27 @@
-import {memo} from "react";
-import {View} from "react-native";
-import {AppColors} from "../../../../theme/AppColors";
-import {PasswordRuleEntity} from "../../../domain/entity/login/PasswordRuleEntity";
-import {AppTextMemoized} from "../appText/AppText";
-import {getAppPasswordRulesStyles} from "./styles/AppPasswordRules.styles";
+import {memo} from 'react';
+import {View} from 'react-native';
+import {AppColors} from '../../../../theme/AppColors';
+import {PasswordRuleEntity} from '../../../domain/entity/login/PasswordRuleEntity';
+import {AppTextMemoized} from '../appText/AppText';
+import {getAppPasswordRulesStyles} from './styles/AppPasswordRules.styles';
 
 type PropsAppPasswordRules = {
   colors: AppColors;
-  title?: string;
   rules: Array<PasswordRuleEntity>;
+  title?: string;
+  testID?: string;
 };
 
 const AppPasswordRules = ({
   colors,
-  title = "Password should",
+  testID,
   rules,
+  title = 'Password should',
 }: PropsAppPasswordRules) => {
   const stylesToUse = getAppPasswordRulesStyles(colors);
 
   return (
-    <View style={stylesToUse.container}>
+    <View style={stylesToUse.container} testID={testID}>
       {/* Title */}
       <AppTextMemoized
         textString={title}
@@ -33,7 +35,7 @@ const AppPasswordRules = ({
           <AppTextMemoized
             key={`rule-${index}`}
             textString={ruleEntity.textString}
-            textColorVariant={ruleEntity.isSatisfied ? `success` : `error`}
+            textColorVariant={ruleEntity.isSatisfied ? 'success' : 'error'}
             textVariant="sm"
             extraTextStyle={stylesToUse.textStyle}
           />

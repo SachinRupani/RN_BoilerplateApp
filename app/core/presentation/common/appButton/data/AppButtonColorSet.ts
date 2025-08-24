@@ -1,5 +1,5 @@
-import {AppColors} from "../../../../../theme/AppColors";
-import {AppButtonVariantType} from "./AppButtonVariantType";
+import {AppColors} from '../../../../../theme/AppColors';
+import {AppButtonVariantType} from './AppButtonVariantType';
 
 export interface AppButtonColorSet {
   bgColor: string;

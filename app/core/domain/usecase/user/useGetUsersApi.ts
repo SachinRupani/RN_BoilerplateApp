@@ -1,8 +1,8 @@
-import {useEffect, useState} from "react";
-import {AppDefaults} from "../../../../config/AppDefaults";
-import {isEmptyArray} from "../../../../utils/GeneralUtils";
-import {useGetUserListQuery} from "../../../data/dataSource/collections/UserEndpoints";
-import {UserEntity} from "../../entity/user/UserEntity";
+import {useEffect, useState} from 'react';
+import {AppDefaults} from '../../../../config/AppDefaults';
+import {isEmptyArray} from '../../../../utils/GeneralUtils';
+import {useGetUserListQuery} from '../../../data/dataSource/collections/UserEndpoints';
+import {UserEntity} from '../../entity/user/UserEntity';
 
 export const useGetUsersApi = () => {
   const [users, setUsers] = useState<Array<UserEntity>>([]);

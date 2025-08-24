@@ -1,38 +1,38 @@
-import {AppColors} from "../../../../../theme/AppColors";
+import {AppColors} from '../../../../../theme/AppColors';
 
 export type TextColorVariant =
-  | "text1"
-  | "text2"
-  | "text3"
-  | "text4"
-  | "primary"
-  | "secondary"
-  | "error"
-  | "success"
-  | "white";
+  | 'text1'
+  | 'text2'
+  | 'text3'
+  | 'text4'
+  | 'primary'
+  | 'secondary'
+  | 'error'
+  | 'success'
+  | 'white';
 
 export const getDesiredTextColor = (
   colors: AppColors,
   colorVariant: TextColorVariant,
 ): string => {
   switch (colorVariant) {
-    case "text1":
+    case 'text1':
       return colors.text1;
-    case "text2":
+    case 'text2':
       return colors.text2;
-    case "text3":
+    case 'text3':
       return colors.text3;
-    case "text4":
+    case 'text4':
       return colors.text4;
-    case "primary":
+    case 'primary':
       return colors.primary;
-    case "secondary":
+    case 'secondary':
       return colors.secondary;
-    case "error":
+    case 'error':
       return colors.error;
-    case "success":
+    case 'success':
       return colors.success;
-    case "white":
+    case 'white':
       return colors.white;
   }
 };

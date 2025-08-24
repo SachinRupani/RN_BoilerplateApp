@@ -1,17 +1,17 @@
-import {memo, useMemo} from "react";
-import {Text, TouchableOpacity} from "react-native";
-import {AppColors} from "../../../../theme/AppColors";
-import {useThrottle} from "../_hooks/useThrottle";
-import {AppLoadingIndicator} from "../appLoadingIndicator/AppLoadingIndicator";
+import {memo, useMemo} from 'react';
+import {Text, TouchableOpacity} from 'react-native';
+import {AppColors} from '../../../../theme/AppColors';
+import {useThrottle} from '../_hooks/useThrottle';
+import {AppLoadingIndicator} from '../appLoadingIndicator/AppLoadingIndicator';
 import {
   AppButtonColorSet,
   getPrimaryButtonColorSet,
   getSecondaryButtonColorSet,
-} from "./data/AppButtonColorSet";
-import {AppButtonColorType} from "./data/AppButtonColorType";
-import {AppButtonVariantType} from "./data/AppButtonVariantType";
-import {AppButtonWidthType} from "./data/AppButtonWidthType";
-import {getAppButtonStyles} from "./styles/AppButton.styles";
+} from './data/AppButtonColorSet';
+import {AppButtonColorType} from './data/AppButtonColorType';
+import {AppButtonVariantType} from './data/AppButtonVariantType';
+import {AppButtonWidthType} from './data/AppButtonWidthType';
+import {getAppButtonStyles} from './styles/AppButton.styles';
 
 type PropsAppButton = {
   colorsToUse: AppColors;
@@ -22,6 +22,7 @@ type PropsAppButton = {
   variant?: AppButtonVariantType;
   widthType?: AppButtonWidthType;
   extraContainerStyle?: any;
+  testID?: string;
   onClickAction?: () => void;
 };
 
@@ -33,6 +34,7 @@ const AppButton = ({
   colorType = AppButtonColorType.Primary,
   variant = AppButtonVariantType.Main,
   widthType = AppButtonWidthType.Full,
+  testID,
   extraContainerStyle,
   onClickAction,
 }: PropsAppButton) => {
@@ -67,6 +69,7 @@ const AppButton = ({
 
   return (
     <TouchableOpacity
+      testID={testID}
       disabled={isButtonDisabled || isLoading}
       activeOpacity={0.7}
       onPress={_handleButtonPress}

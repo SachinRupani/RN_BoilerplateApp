@@ -1,5 +1,5 @@
-import {useState} from "react";
-import {useGetUsersApi} from "../../../../../../../domain/usecase/user/useGetUsersApi";
+import {useState} from 'react';
+import {useGetUsersApi} from '../../../../../../../domain/usecase/user/useGetUsersApi';
 
 export const useHomeScreenHook = () => {
   const {isLoading, users, loadNextPage, refreshList} = useGetUsersApi();

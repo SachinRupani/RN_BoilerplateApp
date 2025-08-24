@@ -1,4 +1,4 @@
-import {devEnvironment} from "./AppEnvironment";
+import {devEnvironment} from './AppEnvironment';
 
 /**
  * --IMPORTANT--

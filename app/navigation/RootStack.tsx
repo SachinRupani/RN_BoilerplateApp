@@ -1,8 +1,8 @@
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import {Dashboard} from "../core/presentation/screens/authenticated/dashboard/Dashboard";
-import {UserDetailsScreen} from "../core/presentation/screens/authenticated/userDetails/UserDetailsScreen";
-import {LoginScreen} from "../core/presentation/screens/unauthenticated/login/LoginScreen";
-import {ScreenNames} from "./ScreenNames";
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Dashboard} from '../core/presentation/screens/authenticated/dashboard/Dashboard';
+import {UserDetailsScreen} from '../core/presentation/screens/authenticated/userDetails/UserDetailsScreen';
+import {LoginScreen} from '../core/presentation/screens/unauthenticated/login/LoginScreen';
+import {ScreenNames} from './ScreenNames';
 
 const Stack = createNativeStackNavigator();
 

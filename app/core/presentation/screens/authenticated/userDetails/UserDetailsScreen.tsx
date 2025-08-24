@@ -1,12 +1,12 @@
-import {View} from "react-native";
-import {useAppRouteParams} from "../../../../../navigation/hooks/useAppRouteParams";
-import {useAppTheme} from "../../../../../theme/ThemeContext";
-import {AppHeaderMemoized} from "../../../common/appHeader/AppHeader";
-import {AppLoadingContainerised} from "../../../common/appLoadingIndicator/AppLoadingContainerised";
-import {getAppCommonStyles} from "../../../common/styles/CommonStyles";
-import {UserInfoMemoized} from "./components/userInfo/UserInfo";
-import {useUserDetailsScreenHook} from "./hooks/useUserDetailsScreenHook";
-import {getUserDetailsScreenStyles} from "./styles/UserDetailsScreen.styles";
+import {View} from 'react-native';
+import {useAppRouteParams} from '../../../../../navigation/hooks/useAppRouteParams';
+import {useAppTheme} from '../../../../../theme/ThemeContext';
+import {AppHeaderMemoized} from '../../../common/appHeader/AppHeader';
+import {AppLoadingContainerised} from '../../../common/appLoadingIndicator/AppLoadingContainerised';
+import {getAppCommonStyles} from '../../../common/styles/CommonStyles';
+import {UserInfoMemoized} from './components/userInfo/UserInfo';
+import {useUserDetailsScreenHook} from './hooks/useUserDetailsScreenHook';
+import {getUserDetailsScreenStyles} from './styles/UserDetailsScreen.styles';
 
 export const UserDetailsScreen = () => {
   const {colors} = useAppTheme();
@@ -18,7 +18,7 @@ export const UserDetailsScreen = () => {
 
   // Functions and state
   const {isLoading, userEntity} = useUserDetailsScreenHook(
-    params?.userId ?? `0`,
+    params?.userId ?? '0',
   );
 
   const _renderBodyContent = () => {
@@ -32,7 +32,7 @@ export const UserDetailsScreen = () => {
         {isLoading && (
           <AppLoadingContainerised
             propsLoadingIndicator={{
-              indicatorSize: "large",
+              indicatorSize: 'large',
               indicatorColor: colors.primary,
             }}
           />
@@ -47,7 +47,11 @@ export const UserDetailsScreen = () => {
   return (
     <View style={appCommonStyles.container}>
       {/* Header */}
-      <AppHeaderMemoized textString={`User Details`} enableBackButton={true} />
+      <AppHeaderMemoized
+        testID={'idTitleUserDetails'}
+        textString={'User Details'}
+        enableBackButton={true}
+      />
 
       {/* Body Content */}
       {_renderBodyContent()}
