@@ -1,13 +1,13 @@
-import {StyleSheet} from "react-native";
-import {AppColors} from "../../../../../../../../theme/AppColors";
+import {StyleSheet} from 'react-native';
+import {AppColors} from '../../../../../../../../theme/AppColors';
 
 export const getUserInfoStyles = (colors: AppColors) => {
   return StyleSheet.create({
     container: {
-      flexDirection: "column",
+      flexDirection: 'column',
       backgroundColor: colors.white,
-      justifyContent: "center",
-      alignItems: "center",
+      justifyContent: 'center',
+      alignItems: 'center',
       padding: 16,
       borderRadius: 12,
       gap: 8,
@@ -20,9 +20,9 @@ export const getUserInfoStyles = (colors: AppColors) => {
     },
 
     infoContainer: {
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
       gap: 4,
     },
   });

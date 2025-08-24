@@ -1,10 +1,10 @@
-import {memo} from "react";
-import {TouchableOpacity, View} from "react-native";
-import {useAppTheme} from "../../../../theme/ThemeContext";
-import {AppIconMemoized} from "../appIcon/AppIcon";
-import {AppTextMemoized} from "../appText/AppText";
-import {AppBottomTabEntity, AppBottomTabType} from "./data/AppBottomTabEntity";
-import {getAppBottomTabsStyles} from "./styles/AppBottomTabs.styles";
+import {memo} from 'react';
+import {TouchableOpacity, View} from 'react-native';
+import {useAppTheme} from '../../../../theme/ThemeContext';
+import {AppIconMemoized} from '../appIcon/AppIcon';
+import {AppTextMemoized} from '../appText/AppText';
+import {AppBottomTabEntity, AppBottomTabType} from './data/AppBottomTabEntity';
+import {getAppBottomTabsStyles} from './styles/AppBottomTabs.styles';
 
 type PropsAppBottomTabs = {
   tabs: Array<AppBottomTabEntity>;

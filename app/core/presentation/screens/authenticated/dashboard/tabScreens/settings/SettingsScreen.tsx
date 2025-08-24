@@ -1,12 +1,12 @@
-import {ScrollView, View} from "react-native";
+import {ScrollView, View} from 'react-native';
 
-import {useAppTheme} from "../../../../../../../theme/ThemeContext";
-import {AppBottomTabType} from "../../../../../common/appBottomTabs/data/AppBottomTabEntity";
-import {AppHeaderMemoized} from "../../../../../common/appHeader/AppHeader";
-import {AppThemeSwitcher} from "../../../../../common/appThemeSwitcher/AppThemeSwitcher";
-import {KitchenUiSectionMemoized} from "../../../../../common/kitchenUiSection/KitchenUiSection";
-import {getAppCommonStyles} from "../../../../../common/styles/CommonStyles";
-import {getSettingsStyles} from "./styles/Settings.styles";
+import {useAppTheme} from '../../../../../../../theme/ThemeContext';
+import {AppBottomTabType} from '../../../../../common/appBottomTabs/data/AppBottomTabEntity';
+import {AppHeaderMemoized} from '../../../../../common/appHeader/AppHeader';
+import {AppThemeSwitcher} from '../../../../../common/appThemeSwitcher/AppThemeSwitcher';
+import {KitchenUiSectionMemoized} from '../../../../../common/kitchenUiSection/KitchenUiSection';
+import {getAppCommonStyles} from '../../../../../common/styles/CommonStyles';
+import {getSettingsStyles} from './styles/Settings.styles';
 
 export function SettingsScreen() {
   const {colors} = useAppTheme();

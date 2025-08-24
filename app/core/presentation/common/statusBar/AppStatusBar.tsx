@@ -1,7 +1,7 @@
-import {StatusBar} from "react-native";
+import {StatusBar} from 'react-native';
 
 const AppStatusBar = () => {
-  return <StatusBar barStyle={`default`} />;
+  return <StatusBar barStyle={'default'} />;
 };
 
 export default AppStatusBar;

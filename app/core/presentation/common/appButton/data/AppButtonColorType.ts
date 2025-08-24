@@ -1,4 +1,4 @@
 export enum AppButtonColorType {
-  Primary = "primary",
-  Secondary = "secondary",
+  Primary = 'primary',
+  Secondary = 'secondary',
 }

@@ -1,9 +1,9 @@
 export const getSafeString = (
   input: any,
-  fallbackValue: string = "",
+  fallbackValue: string = '',
 ): string => {
   return input
-    ? typeof input === "object"
+    ? typeof input === 'object'
       ? JSON.stringify(input)
       : String(input).trim()
     : fallbackValue;

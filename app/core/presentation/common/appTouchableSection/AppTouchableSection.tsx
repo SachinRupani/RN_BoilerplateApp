@@ -1,5 +1,5 @@
-import {PropsWithChildren} from "react";
-import {TouchableOpacity} from "react-native";
+import {PropsWithChildren} from 'react';
+import {TouchableOpacity} from 'react-native';
 
 type PropsAppTouchableSection = {
   onPressAction?: () => void;

@@ -1,5 +1,5 @@
 export enum AppButtonVariantType {
-  Main = "main",
-  Outline = "outline",
-  Flat = "flat",
+  Main = 'main',
+  Outline = 'outline',
+  Flat = 'flat',
 }

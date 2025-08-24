@@ -1,6 +1,6 @@
-type ImageKind = "asset" | "url";
+type ImageKind = 'asset' | 'url';
 
-type ImageObject = {
+export type ImageObject = {
   imageKind: ImageKind;
   imageAssetUrl: any;
 };

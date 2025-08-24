@@ -1,9 +1,9 @@
-import {memo} from "react";
-import {Text} from "react-native";
-import {useAppTheme} from "../../../../theme/ThemeContext";
-import {TextColorVariant} from "./data/TextColorVariant";
-import {TextVariant} from "./data/TextSizeVariant";
-import {getAppTextStyles} from "./styles/AppText.styles";
+import {memo} from 'react';
+import {Text} from 'react-native';
+import {useAppTheme} from '../../../../theme/ThemeContext';
+import {TextColorVariant} from './data/TextColorVariant';
+import {TextVariant} from './data/TextSizeVariant';
+import {getAppTextStyles} from './styles/AppText.styles';
 
 type PropsAppText = {
   textString: string;

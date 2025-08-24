@@ -1,16 +1,16 @@
-import {memo} from "react";
-import {View} from "react-native";
-import {useAppNavigation} from "../../../../navigation/hooks/useAppNavigation";
-import {useAppTheme} from "../../../../theme/ThemeContext";
-import {AppIconMemoized} from "../appIcon/AppIcon";
-import {AppTextMemoized} from "../appText/AppText";
-import {TextColorVariant} from "../appText/data/TextColorVariant";
-import {AppTouchableSection} from "../appTouchableSection/AppTouchableSection";
-import {getAppHeaderStyles} from "./styles/AppHeader.styles";
+import {memo} from 'react';
+import {View} from 'react-native';
+import {useAppNavigation} from '../../../../navigation/hooks/useAppNavigation';
+import {useAppTheme} from '../../../../theme/ThemeContext';
+import {AppIconMemoized} from '../appIcon/AppIcon';
+import {AppTextMemoized} from '../appText/AppText';
+import {TextColorVariant} from '../appText/data/TextColorVariant';
+import {AppTouchableSection} from '../appTouchableSection/AppTouchableSection';
+import {getAppHeaderStyles} from './styles/AppHeader.styles';
 
 type PropsAppHeader = {
   textString: string;
-  headerVariant?: "large" | "xl" | "2xl" | "3xl";
+  headerVariant?: 'large' | 'xl' | '2xl' | '3xl';
   textColorVariant?: TextColorVariant;
   enableBackButton?: boolean;
   onBackButtonClick?: () => void;
@@ -49,7 +49,7 @@ const AppHeader = ({
       <AppTextMemoized
         textString={textString}
         textColorVariant={textColorVariant}
-        textVariant={headerVariant ?? "xl"}
+        textVariant={headerVariant ?? 'xl'}
       />
     </View>
   );

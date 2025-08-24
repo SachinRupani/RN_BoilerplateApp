@@ -1,11 +1,11 @@
-import {StyleSheet} from "react-native";
-import {FontFamilyConfig} from "../../../../../config/FontFamilyConfig";
-import {AppColors} from "../../../../../theme/AppColors";
+import {StyleSheet} from 'react-native';
+import {FontFamilyConfig} from '../../../../../config/FontFamilyConfig';
+import {AppColors} from '../../../../../theme/AppColors';
 
-export const getAppPasswordRulesStyles = (colors: AppColors) => {
+export const getAppPasswordRulesStyles = (_: AppColors) => {
   return StyleSheet.create({
     container: {
-      flexDirection: "column",
+      flexDirection: 'column',
       gap: 2,
     },
 

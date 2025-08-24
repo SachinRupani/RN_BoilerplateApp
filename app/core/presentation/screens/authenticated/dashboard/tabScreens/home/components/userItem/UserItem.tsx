@@ -1,11 +1,11 @@
-import React, {memo} from "react";
-import {View} from "react-native";
-import {AppColors} from "../../../../../../../../../theme/AppColors";
-import {UserEntity} from "../../../../../../../../domain/entity/user/UserEntity";
-import {AppImageMemoized} from "../../../../../../../common/appImage/AppImage";
-import {AppTextMemoized} from "../../../../../../../common/appText/AppText";
-import {AppTouchableSection} from "../../../../../../../common/appTouchableSection/AppTouchableSection";
-import {getUserItemStyles} from "./styles/UserItem.styles";
+import React, {memo} from 'react';
+import {View} from 'react-native';
+import {AppColors} from '../../../../../../../../../theme/AppColors';
+import {UserEntity} from '../../../../../../../../domain/entity/user/UserEntity';
+import {AppImageMemoized} from '../../../../../../../common/appImage/AppImage';
+import {AppTextMemoized} from '../../../../../../../common/appText/AppText';
+import {AppTouchableSection} from '../../../../../../../common/appTouchableSection/AppTouchableSection';
+import {getUserItemStyles} from './styles/UserItem.styles';
 
 type PropsUserItem = {
   user: UserEntity;
@@ -26,15 +26,15 @@ const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
         {/* Title */}
         <AppTextMemoized
           textString={`${user.firstName} ${user.lastName}`}
-          textColorVariant={`text1`}
-          textVariant={`large`}
+          textColorVariant={'text1'}
+          textVariant={'large'}
         />
 
         {/* Email */}
         <AppTextMemoized
           textString={`${user.email}`}
-          textColorVariant={`text2`}
-          textVariant={`sm`}
+          textColorVariant={'text2'}
+          textVariant={'sm'}
         />
       </View>
     );
@@ -47,7 +47,7 @@ const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
       {/* Avatar Image */}
       <AppImageMemoized
         imageObj={{
-          imageKind: "url",
+          imageKind: 'url',
           imageAssetUrl: `${user.avatarUrl}`,
         }}
         imageStyles={stylesToUse.imageStyle}

@@ -1,5 +1,5 @@
-import {RouteProp, useRoute} from "@react-navigation/native";
-import {RootStackParamList} from "../types/RootStackParamList";
+import {RouteProp, useRoute} from '@react-navigation/native';
+import {RootStackParamList} from '../types/RootStackParamList';
 
 export const useAppRouteParams = () => {
   // User Details Route

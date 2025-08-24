@@ -1,4 +1,4 @@
-import {useCallback, useRef} from "react";
+import {useCallback, useRef} from 'react';
 
 export const useThrottle = (func?: Function, delayMillis: number = 700) => {
   const lastCallRef = useRef<number>(0);

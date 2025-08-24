@@ -1,11 +1,11 @@
-import {memo} from "react";
-import {View} from "react-native";
-import {useAppTheme} from "../../../../theme/ThemeContext";
-import {AppButtonMemoized} from "../appButton/AppButton";
-import {AppButtonColorType} from "../appButton/data/AppButtonColorType";
-import {AppButtonVariantType} from "../appButton/data/AppButtonVariantType";
-import {AppTextMemoized} from "../appText/AppText";
-import {kitcheButtonSectionStyles} from "./styles/KitchenButtonsSection.styles";
+import {memo} from 'react';
+import {View} from 'react-native';
+import {useAppTheme} from '../../../../theme/ThemeContext';
+import {AppButtonMemoized} from '../appButton/AppButton';
+import {AppButtonColorType} from '../appButton/data/AppButtonColorType';
+import {AppButtonVariantType} from '../appButton/data/AppButtonVariantType';
+import {AppTextMemoized} from '../appText/AppText';
+import {kitcheButtonSectionStyles} from './styles/KitchenButtonsSection.styles';
 
 type PropsKitchenButtonsSection = {};
 
@@ -96,51 +96,51 @@ const KitchenUiSection = ({}: PropsKitchenButtonsSection) => {
       <View style={stylesToUse.sectionContainer}>
         {/* Title */}
         <AppTextMemoized
-          textString={`Texts used in App`}
-          textColorVariant={`text1`}
+          textString={'Texts used in App'}
+          textColorVariant={'text1'}
           textVariant="large"
         />
 
         {/* Various Texts */}
         <View style={stylesToUse.textsContainer}>
           <AppTextMemoized
-            textString={`Heading1`}
-            textColorVariant={`text1`}
+            textString={'Heading1'}
+            textColorVariant={'text1'}
             textVariant="4xl"
           />
           <AppTextMemoized
-            textString={`Heading2`}
-            textColorVariant={`text1`}
+            textString={'Heading2'}
+            textColorVariant={'text1'}
             textVariant="3xl"
           />
           <AppTextMemoized
-            textString={`Heading3`}
-            textColorVariant={`text1`}
+            textString={'Heading3'}
+            textColorVariant={'text1'}
             textVariant="2xl"
           />
           <AppTextMemoized
-            textString={`XL Text`}
-            textColorVariant={`text1`}
+            textString={'XL Text'}
+            textColorVariant={'text1'}
             textVariant="xl"
           />
           <AppTextMemoized
-            textString={`Large Text`}
-            textColorVariant={`text1`}
+            textString={'Large Text'}
+            textColorVariant={'text1'}
             textVariant="large"
           />
           <AppTextMemoized
-            textString={`Base Text`}
-            textColorVariant={`text1`}
+            textString={'Base Text'}
+            textColorVariant={'text1'}
             textVariant="base"
           />
           <AppTextMemoized
-            textString={`Small Text`}
-            textColorVariant={`text1`}
+            textString={'Small Text'}
+            textColorVariant={'text1'}
             textVariant="sm"
           />
           <AppTextMemoized
-            textString={`Very small text`}
-            textColorVariant={`text1`}
+            textString={'Very small text'}
+            textColorVariant={'text1'}
             textVariant="xs"
           />
         </View>

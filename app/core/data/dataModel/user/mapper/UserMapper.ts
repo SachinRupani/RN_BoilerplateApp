@@ -1,7 +1,7 @@
-import {getSafeNumber, getSafeString} from "../../../../../utils/GeneralUtils";
-import {UserEntity} from "../../../../domain/entity/user/UserEntity";
-import {ApiUserDataModel} from "../ApiUserDataModel";
-import {ApiUserDetailsResponseDataModel} from "../ApiUserDetailsResponseDataModel";
+import {getSafeNumber, getSafeString} from '../../../../../utils/GeneralUtils';
+import {UserEntity} from '../../../../domain/entity/user/UserEntity';
+import {ApiUserDataModel} from '../ApiUserDataModel';
+import {ApiUserDetailsResponseDataModel} from '../ApiUserDetailsResponseDataModel';
 
 export const mapApiUserToDomainUser = (
   apiUser: Partial<ApiUserDataModel>,

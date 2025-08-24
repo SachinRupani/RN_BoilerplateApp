@@ -1,18 +1,18 @@
-import React, {useCallback} from "react";
-import {View} from "react-native";
-import {AppDefaults} from "../../../../../config/AppDefaults";
-import {useAppNavigation} from "../../../../../navigation/hooks/useAppNavigation";
-import {useAppTheme} from "../../../../../theme/ThemeContext";
-import {AppButtonMemoized} from "../../../common/appButton/AppButton";
-import {AppButtonColorType} from "../../../common/appButton/data/AppButtonColorType";
-import {AppHeaderMemoized} from "../../../common/appHeader/AppHeader";
-import {AppPasswordRulesMemoized} from "../../../common/appPasswordRules/AppPasswordRules";
-import {AppTextMemoized} from "../../../common/appText/AppText";
-import {AppTextInputMemoized} from "../../../common/appTextInput/AppTextInput";
-import {AppThemeSwitcher} from "../../../common/appThemeSwitcher/AppThemeSwitcher";
-import {getAppCommonStyles} from "../../../common/styles/CommonStyles";
-import {useLoginScreenHook} from "./hooks/useLoginScreenHook";
-import {getLoginScreenStyles} from "./styles/LoginScreen.styles";
+import React, {useCallback} from 'react';
+import {View} from 'react-native';
+import {AppDefaults} from '../../../../../config/AppDefaults';
+import {useAppNavigation} from '../../../../../navigation/hooks/useAppNavigation';
+import {useAppTheme} from '../../../../../theme/ThemeContext';
+import {AppButtonMemoized} from '../../../common/appButton/AppButton';
+import {AppButtonColorType} from '../../../common/appButton/data/AppButtonColorType';
+import {AppHeaderMemoized} from '../../../common/appHeader/AppHeader';
+import {AppPasswordRulesMemoized} from '../../../common/appPasswordRules/AppPasswordRules';
+import {AppTextMemoized} from '../../../common/appText/AppText';
+import {AppTextInputMemoized} from '../../../common/appTextInput/AppTextInput';
+import {AppThemeSwitcher} from '../../../common/appThemeSwitcher/AppThemeSwitcher';
+import {getAppCommonStyles} from '../../../common/styles/CommonStyles';
+import {useLoginScreenHook} from './hooks/useLoginScreenHook';
+import {getLoginScreenStyles} from './styles/LoginScreen.styles';
 
 export const LoginScreen = () => {
   const {colors} = useAppTheme();
@@ -23,7 +23,7 @@ export const LoginScreen = () => {
 
   const _handleLoginAction = useCallback(() => {
     navigateToDashboard();
-  }, []);
+  }, [navigateToDashboard]);
 
   // Functions & state
   const {
@@ -90,7 +90,7 @@ export const LoginScreen = () => {
 
   return (
     <View style={[appCommonStyles.container]}>
-      <AppHeaderMemoized textString={`Login`} />
+      <AppHeaderMemoized textString={'Login'} />
       {_renderBodyContent()}
     </View>
   );

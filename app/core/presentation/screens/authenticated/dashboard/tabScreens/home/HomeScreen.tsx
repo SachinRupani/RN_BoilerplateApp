@@ -1,12 +1,12 @@
-import {View} from "react-native";
+import {View} from 'react-native';
 
-import {useAppTheme} from "../../../../../../../theme/ThemeContext";
-import {AppBottomTabType} from "../../../../../common/appBottomTabs/data/AppBottomTabEntity";
-import {AppHeaderMemoized} from "../../../../../common/appHeader/AppHeader";
-import {AppLoadingContainerised} from "../../../../../common/appLoadingIndicator/AppLoadingContainerised";
-import {getAppCommonStyles} from "../../../../../common/styles/CommonStyles";
-import {UserList} from "./components/userList/UserList";
-import {useHomeScreenHook} from "./hooks/useHomeScreenHook";
+import {useAppTheme} from '../../../../../../../theme/ThemeContext';
+import {AppBottomTabType} from '../../../../../common/appBottomTabs/data/AppBottomTabEntity';
+import {AppHeaderMemoized} from '../../../../../common/appHeader/AppHeader';
+import {AppLoadingContainerised} from '../../../../../common/appLoadingIndicator/AppLoadingContainerised';
+import {getAppCommonStyles} from '../../../../../common/styles/CommonStyles';
+import {UserList} from './components/userList/UserList';
+import {useHomeScreenHook} from './hooks/useHomeScreenHook';
 
 export function HomeScreen() {
   const {colors} = useAppTheme();
@@ -31,7 +31,7 @@ export function HomeScreen() {
         {isLoading && (
           <AppLoadingContainerised
             propsLoadingIndicator={{
-              indicatorSize: "large",
+              indicatorSize: 'large',
               indicatorColor: colors.primary,
             }}
           />

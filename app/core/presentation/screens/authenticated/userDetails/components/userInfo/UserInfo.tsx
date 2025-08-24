@@ -1,10 +1,10 @@
-import {memo} from "react";
-import {View} from "react-native";
-import {AppColors} from "../../../../../../../theme/AppColors";
-import {UserEntity} from "../../../../../../domain/entity/user/UserEntity";
-import {AppImageMemoized} from "../../../../../common/appImage/AppImage";
-import {AppTextMemoized} from "../../../../../common/appText/AppText";
-import {getUserInfoStyles} from "./styles/UserInfo.styles";
+import {memo} from 'react';
+import {View} from 'react-native';
+import {AppColors} from '../../../../../../../theme/AppColors';
+import {UserEntity} from '../../../../../../domain/entity/user/UserEntity';
+import {AppImageMemoized} from '../../../../../common/appImage/AppImage';
+import {AppTextMemoized} from '../../../../../common/appText/AppText';
+import {getUserInfoStyles} from './styles/UserInfo.styles';
 
 type PropsUserInfo = {
   user: UserEntity;
@@ -20,15 +20,15 @@ const UserInfo = ({user, colors}: PropsUserInfo) => {
         {/* Title */}
         <AppTextMemoized
           textString={`${user.firstName} ${user.lastName}`}
-          textColorVariant={`text1`}
-          textVariant={`xl`}
+          textColorVariant={'text1'}
+          textVariant={'xl'}
         />
 
         {/* Email */}
         <AppTextMemoized
           textString={`${user.email}`}
-          textColorVariant={`text2`}
-          textVariant={`sm`}
+          textColorVariant={'text2'}
+          textVariant={'sm'}
         />
       </View>
     );
@@ -39,7 +39,7 @@ const UserInfo = ({user, colors}: PropsUserInfo) => {
       {/* Avatar Image */}
       <AppImageMemoized
         imageObj={{
-          imageKind: "url",
+          imageKind: 'url',
           imageAssetUrl: `${user.avatarUrl}`,
         }}
         imageStyles={stylesToUse.imageStyle}
