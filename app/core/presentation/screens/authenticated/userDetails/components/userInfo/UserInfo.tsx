@@ -19,6 +19,7 @@ const UserInfo = ({user, colors}: PropsUserInfo) => {
       <View style={stylesToUse.infoContainer}>
         {/* Title */}
         <AppTextMemoized
+          testID={`userInfoTitle${user.id}`}
           textString={`${user.firstName} ${user.lastName}`}
           textColorVariant={'text1'}
           textVariant={'xl'}

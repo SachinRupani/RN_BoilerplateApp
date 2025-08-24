@@ -14,6 +14,7 @@ export type PropsAppTextInput = {
   initialValue?: string;
   isSecureEntry?: boolean;
   placeholderText?: string;
+  testID?: string;
   onChangeText?: (text: string) => void;
 };
 
@@ -25,6 +26,7 @@ const AppTextInput = ({
   initialValue = '',
   isSecureEntry = false,
   label,
+  testID,
   onChangeText,
 }: PropsAppTextInput) => {
   const valueRef = useRef<string>(initialValue ?? '');
@@ -47,6 +49,7 @@ const AppTextInput = ({
       {/* Text Input */}
 
       <TextInput
+        testID={testID}
         style={textInputStyles.textInputStyle}
         placeholderTextColor={colors.text4}
         keyboardType={keyboardType}

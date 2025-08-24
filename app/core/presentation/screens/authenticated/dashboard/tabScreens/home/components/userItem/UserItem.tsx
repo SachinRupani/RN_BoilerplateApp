@@ -42,6 +42,7 @@ const UserItem = ({user, colors, onClickItem}: PropsUserItem) => {
 
   return (
     <AppTouchableSection
+      testID={`idUserItem${user.id}`}
       styles={stylesToUse.container}
       onPressAction={_handleClick}>
       {/* Avatar Image */}

@@ -51,7 +51,10 @@ export function HomeScreen() {
 
   return (
     <View style={commonStyles.container}>
-      <AppHeaderMemoized textString={AppBottomTabType.Home.valueOf()} />
+      <AppHeaderMemoized
+        testID={'idTitleHome'}
+        textString={AppBottomTabType.Home.valueOf()}
+      />
       {_renderBodyContent()}
     </View>
   );

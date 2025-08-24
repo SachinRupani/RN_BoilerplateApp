@@ -44,6 +44,7 @@ export const UserList = ({
 
   return (
     <FlatList
+      testID={'idUserList'}
       style={stylesToUse.listStyle}
       showsVerticalScrollIndicator={false}
       contentContainerStyle={stylesToUse.listContentContainerStyle}

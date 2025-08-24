@@ -7,19 +7,21 @@ import {getAppPasswordRulesStyles} from './styles/AppPasswordRules.styles';
 
 type PropsAppPasswordRules = {
   colors: AppColors;
-  title?: string;
   rules: Array<PasswordRuleEntity>;
+  title?: string;
+  testID?: string;
 };
 
 const AppPasswordRules = ({
   colors,
-  title = 'Password should',
+  testID,
   rules,
+  title = 'Password should',
 }: PropsAppPasswordRules) => {
   const stylesToUse = getAppPasswordRulesStyles(colors);
 
   return (
-    <View style={stylesToUse.container}>
+    <View style={stylesToUse.container} testID={testID}>
       {/* Title */}
       <AppTextMemoized
         textString={title}

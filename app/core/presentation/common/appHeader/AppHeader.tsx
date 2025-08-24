@@ -13,6 +13,7 @@ type PropsAppHeader = {
   headerVariant?: 'large' | 'xl' | '2xl' | '3xl';
   textColorVariant?: TextColorVariant;
   enableBackButton?: boolean;
+  testID?: string;
   onBackButtonClick?: () => void;
 };
 
@@ -21,6 +22,7 @@ const AppHeader = ({
   textColorVariant,
   headerVariant,
   enableBackButton,
+  testID,
   onBackButtonClick,
 }: PropsAppHeader) => {
   const {colors} = useAppTheme();
@@ -47,6 +49,7 @@ const AppHeader = ({
 
       {/* Title */}
       <AppTextMemoized
+        testID={testID}
         textString={textString}
         textColorVariant={textColorVariant}
         textVariant={headerVariant ?? 'xl'}

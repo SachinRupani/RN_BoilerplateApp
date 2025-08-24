@@ -47,7 +47,11 @@ export const UserDetailsScreen = () => {
   return (
     <View style={appCommonStyles.container}>
       {/* Header */}
-      <AppHeaderMemoized textString={'User Details'} enableBackButton={true} />
+      <AppHeaderMemoized
+        testID={'idTitleUserDetails'}
+        textString={'User Details'}
+        enableBackButton={true}
+      />
 
       {/* Body Content */}
       {_renderBodyContent()}

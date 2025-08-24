@@ -8,10 +8,11 @@ import {getAppBottomTabsStyles} from './styles/AppBottomTabs.styles';
 
 type PropsAppBottomTabs = {
   tabs: Array<AppBottomTabEntity>;
+  testID?: string;
   onClickAction?: (clickedTabType: AppBottomTabType) => void;
 };
 
-const AppBottomTabs = ({tabs, onClickAction}: PropsAppBottomTabs) => {
+const AppBottomTabs = ({tabs, testID, onClickAction}: PropsAppBottomTabs) => {
   const {colors} = useAppTheme();
   const stylesToUse = getAppBottomTabsStyles(colors);
 
@@ -51,7 +52,11 @@ const AppBottomTabs = ({tabs, onClickAction}: PropsAppBottomTabs) => {
     });
   };
 
-  return <View style={stylesToUse.container}>{_renderTabs()}</View>;
+  return (
+    <View testID={testID} style={stylesToUse.container}>
+      {_renderTabs()}
+    </View>
+  );
 };
 
 export const AppBottomTabsMemoized = memo(AppBottomTabs);

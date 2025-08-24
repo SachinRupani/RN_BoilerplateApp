@@ -22,6 +22,7 @@ type PropsAppButton = {
   variant?: AppButtonVariantType;
   widthType?: AppButtonWidthType;
   extraContainerStyle?: any;
+  testID?: string;
   onClickAction?: () => void;
 };
 
@@ -33,6 +34,7 @@ const AppButton = ({
   colorType = AppButtonColorType.Primary,
   variant = AppButtonVariantType.Main,
   widthType = AppButtonWidthType.Full,
+  testID,
   extraContainerStyle,
   onClickAction,
 }: PropsAppButton) => {
@@ -67,6 +69,7 @@ const AppButton = ({
 
   return (
     <TouchableOpacity
+      testID={testID}
       disabled={isButtonDisabled || isLoading}
       activeOpacity={0.7}
       onPress={_handleButtonPress}

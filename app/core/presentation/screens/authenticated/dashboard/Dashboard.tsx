@@ -46,7 +46,11 @@ export function Dashboard() {
       <View style={stylesToUse.tabContentContainer}>{_renderTabContent()}</View>
 
       {/* Bottom Tabs */}
-      <AppBottomTabsMemoized tabs={tabs} onClickAction={_handleTabClick} />
+      <AppBottomTabsMemoized
+        testID={'idDashboardTabs'}
+        tabs={tabs}
+        onClickAction={_handleTabClick}
+      />
     </View>
   );
 }

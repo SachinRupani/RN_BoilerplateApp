@@ -43,10 +43,15 @@ export const LoginScreen = () => {
         />
 
         <View style={loginStyles.loginCardContainer}>
-          <AppTextMemoized textString="Welcome user" textVariant="2xl" />
+          <AppTextMemoized
+            testID="idBlockTitle"
+            textString="Welcome user"
+            textVariant="2xl"
+          />
 
           {/* Email */}
           <AppTextInputMemoized
+            testID={'idEmailInput'}
             colors={colors}
             label="Email ID"
             keyboardType="email-address"
@@ -57,6 +62,7 @@ export const LoginScreen = () => {
 
           {/* Password */}
           <AppTextInputMemoized
+            testID={'idPasswordInput'}
             colors={colors}
             label="Password"
             keyboardType="default"
@@ -69,6 +75,7 @@ export const LoginScreen = () => {
           {/* Password Rules */}
           {shouldDisplayPasswordRules && (
             <AppPasswordRulesMemoized
+              testID={'idPasswordRules'}
               colors={colors}
               rules={loginEntity.passwordRules}
             />
@@ -76,6 +83,7 @@ export const LoginScreen = () => {
 
           {/* Login Button */}
           <AppButtonMemoized
+            testID={'idLoginButton'}
             isButtonDisabled={!shouldEnableLoginButton}
             colorType={AppButtonColorType.Primary}
             colorsToUse={colors}
@@ -90,7 +98,7 @@ export const LoginScreen = () => {
 
   return (
     <View style={[appCommonStyles.container]}>
-      <AppHeaderMemoized textString={'Login'} />
+      <AppHeaderMemoized testID={'idTitle'} textString={'Login'} />
       {_renderBodyContent()}
     </View>
   );
