@@ -10,7 +10,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
@@ -20,3 +19,12 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+allprojects {
+    repositories {
+        google()
+        maven {
+            url("$rootDir/../node_modules/detox/Detox-android")
+        }
+    }
+}

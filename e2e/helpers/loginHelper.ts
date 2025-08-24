@@ -6,8 +6,6 @@ export const loginTest = async () => {
 
   // Inputs
   await element(by.id('idEmailInput')).typeText('sachin@gmail.com');
-  await element(by.id('idEmailInput')).tapReturnKey();
-
   await element(by.id('idPasswordInput')).typeText('Sach@123');
   await element(by.id('idPasswordInput')).tapReturnKey();
 
