@@ -10,6 +10,7 @@ type PropsUserList = {
   listData: Array<UserEntity>;
   colors: AppColors;
   isRefreshing: boolean;
+  isLoading: boolean;
   onLoadNextPage: () => void;
   onRefresh?: () => void;
 };

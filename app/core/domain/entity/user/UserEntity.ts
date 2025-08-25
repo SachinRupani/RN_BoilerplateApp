@@ -5,3 +5,11 @@ export interface UserEntity {
   readonly email: string;
   readonly avatarUrl: string;
 }
+
+export const defaultUserEntity: UserEntity = {
+  id: 0,
+  avatarUrl: '',
+  email: '',
+  firstName: '',
+  lastName: '',
+};

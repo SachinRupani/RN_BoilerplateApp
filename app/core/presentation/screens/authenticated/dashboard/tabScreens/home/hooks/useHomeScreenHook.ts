@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import {useGetUsersApi} from '../../../../../../../domain/usecase/user/useGetUsersApi';
+import {useFetchSagaUsersApi} from '../../../../../../../domain/usecase/user/useFetchSagaUsersApi';
 
 export const useHomeScreenHook = () => {
-  const {isLoading, users, loadNextPage, refreshList} = useGetUsersApi();
+  const {isLoading, users, loadNextPage, refreshList} = useFetchSagaUsersApi();
 
   const [isDataRefreshing, setIsDataRefreshing] = useState<boolean>(false);
 

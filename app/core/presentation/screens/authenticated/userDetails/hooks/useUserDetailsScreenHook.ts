@@ -1,7 +1,11 @@
-import {useGetUserDetailsQuery} from '../../../../../data/dataSource/collections/UserEndpoints';
+import {useFetchSagaUserDetailsApi} from '../../../../../domain/usecase/user/useFetchSagaUserDetailsApi';
 
 export const useUserDetailsScreenHook = (userId: string) => {
-  const {isLoading, data} = useGetUserDetailsQuery(userId);
+  // RTK
+  //const {isLoading, data} = useGetUserDetailsQuery(userId);
+
+  // Saga
+  const {data, isLoading} = useFetchSagaUserDetailsApi(userId);
 
   return {
     isLoading,

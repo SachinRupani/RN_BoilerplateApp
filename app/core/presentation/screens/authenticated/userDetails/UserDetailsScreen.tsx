@@ -2,7 +2,7 @@ import {View} from 'react-native';
 import {useAppRouteParams} from '../../../../../navigation/hooks/useAppRouteParams';
 import {useAppTheme} from '../../../../../theme/ThemeContext';
 import {AppHeaderMemoized} from '../../../common/appHeader/AppHeader';
-import {AppLoadingContainerised} from '../../../common/appLoadingIndicator/AppLoadingContainerised';
+import {AppLoadingIndicator} from '../../../common/appLoadingIndicator/AppLoadingIndicator';
 import {getAppCommonStyles} from '../../../common/styles/CommonStyles';
 import {UserInfoMemoized} from './components/userInfo/UserInfo';
 import {useUserDetailsScreenHook} from './hooks/useUserDetailsScreenHook';
@@ -29,14 +29,7 @@ export const UserDetailsScreen = () => {
           userDetailsStyles.bodyContainer,
         ]}>
         {/* Loading */}
-        {isLoading && (
-          <AppLoadingContainerised
-            propsLoadingIndicator={{
-              indicatorSize: 'large',
-              indicatorColor: colors.primary,
-            }}
-          />
-        )}
+        {isLoading && <AppLoadingIndicator indicatorSize="large" />}
 
         {/* User Info */}
         {userEntity && <UserInfoMemoized colors={colors} user={userEntity} />}
