@@ -1,4 +1,4 @@
-import {stagingEnvironment} from "./AppEnvironment";
+import {stagingEnvironment} from './AppEnvironment';
 
 /**
  * --IMPORTANT--

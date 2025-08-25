@@ -1,6 +1,6 @@
-import {AppColors} from "../../../../../theme/AppColors";
-import {PropsAppIcon} from "../../appIcon/AppIcon";
-import {AppBottomTabEntity, AppBottomTabType} from "./AppBottomTabEntity";
+import {AppColors} from '../../../../../theme/AppColors';
+import {PropsAppIcon} from '../../appIcon/AppIcon';
+import {AppBottomTabEntity, AppBottomTabType} from './AppBottomTabEntity';
 
 export const defaultTabs = (colors: AppColors): Array<AppBottomTabEntity> => {
   const arrayTabs: Array<AppBottomTabEntity> = [
@@ -8,7 +8,7 @@ export const defaultTabs = (colors: AppColors): Array<AppBottomTabEntity> => {
       tabType: AppBottomTabType.Home,
       isActive: true,
       icon: {
-        iconName: "home",
+        iconName: 'home',
         iconHexColor: colors.tabForegroundActive,
       },
     },
@@ -16,7 +16,7 @@ export const defaultTabs = (colors: AppColors): Array<AppBottomTabEntity> => {
       tabType: AppBottomTabType.Settings,
       isActive: false,
       icon: {
-        iconName: "settings-outline",
+        iconName: 'settings-outline',
         iconHexColor: colors.tabForegroundDefault,
       },
     },
@@ -40,13 +40,13 @@ export const getDesiredIconProps = (
     case AppBottomTabType.Home:
       return {
         ...iconObj,
-        iconName: isActive ? "home" : "home-outline",
+        iconName: isActive ? 'home' : 'home-outline',
       };
 
     case AppBottomTabType.Settings:
       return {
         ...iconObj,
-        iconName: isActive ? "settings" : "settings-outline",
+        iconName: isActive ? 'settings' : 'settings-outline',
       };
 
     default:

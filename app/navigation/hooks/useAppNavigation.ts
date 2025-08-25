@@ -1,6 +1,10 @@
-import {NavigationProp, useNavigation} from "@react-navigation/native";
-import {ScreenNames} from "../ScreenNames";
-import {RootStackParamList} from "../types/RootStackParamList";
+import {
+  NavigationProp,
+  StackActions,
+  useNavigation,
+} from '@react-navigation/native';
+import {ScreenNames} from '../ScreenNames';
+import {RootStackParamList} from '../types/RootStackParamList';
 
 export const useAppNavigation = () => {
   // This hook can be used to encapsulate navigation logic or state management
@@ -14,9 +18,13 @@ export const useAppNavigation = () => {
     }
   };
 
+  const navigateToDashboard = () => {
+    navigation.dispatch(StackActions.replace(ScreenNames.Dashboard));
+  };
+
   const navigateToUserDetails = (userId: string) => {
     navigation.navigate(ScreenNames.UserDetails, {userId: userId});
   };
 
-  return {navigateBack, navigateToUserDetails};
+  return {navigateBack, navigateToDashboard, navigateToUserDetails};
 };
