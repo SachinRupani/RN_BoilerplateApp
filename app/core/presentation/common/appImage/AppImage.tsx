@@ -1,10 +1,11 @@
-import {memo} from "react";
-import FastImage from "react-native-fast-image";
-import {Images} from "../../../../../assets/images";
+import {memo} from 'react';
+import FastImage from 'react-native-fast-image';
+import {Images} from '../../../../../assets/images';
+import {ImageObject} from './data/ImageType';
 
 type PropsAppImage = {
   imageObj: ImageObject;
-  resizeMode?: "center" | "contain" | "cover" | "stretch";
+  resizeMode?: 'center' | 'contain' | 'cover' | 'stretch';
   imageStyles?: any;
   fallbackPlaceholder?: any;
 };
@@ -20,7 +21,7 @@ const AppImage = ({
     const _getImageSource = () => {
       // URL
       if (
-        imageObj.imageKind === `url` &&
+        imageObj.imageKind === 'url' &&
         String(imageObj.imageAssetUrl).trim().length > 0
       ) {
         return {
@@ -30,7 +31,7 @@ const AppImage = ({
       }
 
       // Local asset
-      if (imageObj.imageKind === "asset" && imageObj.imageAssetUrl) {
+      if (imageObj.imageKind === 'asset' && imageObj.imageAssetUrl) {
         return imageObj.imageAssetUrl;
       }
 
@@ -39,7 +40,7 @@ const AppImage = ({
 
     return (
       <FastImage
-        resizeMode={resizeMode ?? `cover`}
+        resizeMode={resizeMode ?? 'cover'}
         style={{width: 48, height: 48, ...imageStyles}}
         source={_getImageSource()}
       />

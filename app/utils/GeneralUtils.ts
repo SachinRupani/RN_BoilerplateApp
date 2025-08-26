@@ -1,8 +1,12 @@
 export const getSafeString = (
   input: any,
-  fallbackValue: string = "",
+  fallbackValue: string = '',
 ): string => {
-  return input ? String(input).trim() : fallbackValue;
+  return input
+    ? typeof input === 'object'
+      ? JSON.stringify(input)
+      : String(input).trim()
+    : fallbackValue;
 };
 
 export const getSafeNumber = (

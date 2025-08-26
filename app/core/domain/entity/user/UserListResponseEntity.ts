@@ -1,4 +1,4 @@
-import {UserEntity} from "./UserEntity";
+import {UserEntity} from './UserEntity';
 
 export interface UserListResponseEntity {
   users: Array<UserEntity>;

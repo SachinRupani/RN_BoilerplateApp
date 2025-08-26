@@ -1,12 +1,12 @@
-import {ActivityIndicator} from "react-native";
+import {ActivityIndicator} from 'react-native';
 
 export type PropsAppLoadingIndicator = {
-  indicatorSize: "large" | "small";
+  indicatorSize: 'large' | 'small';
   indicatorColor: string;
 };
 
 export const AppLoadingIndicator = ({
-  indicatorSize = "large",
+  indicatorSize = 'large',
   indicatorColor,
 }: PropsAppLoadingIndicator) => {
   return <ActivityIndicator size={indicatorSize} color={indicatorColor} />;

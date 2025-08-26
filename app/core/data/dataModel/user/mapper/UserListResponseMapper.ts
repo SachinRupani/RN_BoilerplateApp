@@ -1,7 +1,7 @@
-import {getSafeNumber} from "../../../../../utils/GeneralUtils";
-import {UserListResponseEntity} from "../../../../domain/entity/user/UserListResponseEntity";
-import {ApiUserListResponseDataModel} from "../ApiUserListResponseDataModel";
-import {mapApiUserToDomainUser} from "./UserMapper";
+import {getSafeNumber} from '../../../../../utils/GeneralUtils';
+import {UserListResponseEntity} from '../../../../domain/entity/user/UserListResponseEntity';
+import {ApiUserListResponseDataModel} from '../ApiUserListResponseDataModel';
+import {mapApiUserToDomainUser} from './UserMapper';
 
 export const mapApiUserListResponseToDomainUserListResponse = (
   apiResponse: Partial<ApiUserListResponseDataModel>,

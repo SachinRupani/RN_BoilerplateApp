@@ -1,80 +1,102 @@
-# React Native Boilerplate App
+# 🚀 React Native Boilerplate App
 
-A minimal React Native boilerplate app with basic theming, navigation, and environment setup — perfect as a starting point for new projects.
+A **minimal yet powerful React Native boilerplate** to kickstart your projects.  
+It comes pre-configured with theming, navigation, environment setups, API handling, and testing utilities — designed to save time and enforce best practices from the start.
+
+---
 
 ## ✨ Features
 
-- ✅ **Theme Support**
+- **🎨 Theming**
 
-  - 🎨 Light and Dark theme color sets
-  - 🔄 Theme switching using Context API
-  - 💾 Persistent state-ready structure
+  - Light and Dark themes
+  - Context API-based theme switching
+  - Structure ready for persistent storage
 
-- ✅ **Custom Bottom Tabs**
+- **🧭 Custom Bottom Tabs**
 
-  - 🛠 Own implementation of Bottom Tab navigation
-  - 📌 Flexible props for tab title, icon, and active state
-  - 🖼 **Icons** powered by [`react-native-vector-icons/Ionicons`](https://github.com/oblador/react-native-vector-icons)
+  - Built-in Bottom Tab navigation (no external dependency)
+  - Configurable tab title, icon, and active state
+  - Icons via [`react-native-vector-icons/Ionicons`](https://github.com/oblador/react-native-vector-icons)
 
-- ✅ **Environment Interface**
+- **🌐 Environment Management**
 
-  - 🌐 Separate environment configurations (development, staging, production)
-  - 📦 Easy to extend for API endpoints and environment-specific variables
+  - Separate configs for **Development**, **Staging**, and **Production**
+  - Extendable structure for API endpoints & env-specific variables
 
-- ✅ **Custom Fonts**
+- **✍ Custom Fonts**
 
-  - ✍ NotoSans-Regular
-  - ✍ NotoSans-Medium
-  - ✍ NotoSans-Semibold
-  - ✍ **NotoSans-Bold**
+  - NotoSans
 
-- ✅ **Platform-Specific Configurations**
+- **⚙ Platform-Specific Configs**
 
-  - 🤖 **Android:** Config-based product flavours for environment-specific builds and different app icons and app id suffix too for different flavours (dev, staging and production)
-  - 🍏 **iOS:** Upcoming feature — config-based app variants planned
+  - **Android**: Product flavors for different environments with unique app IDs & icons
+  - **iOS**: Planned support for config-based variants
 
-- ✅ **Basic Screens (Dashboard)**
+- **📱 Prebuilt Screens**
 
-  - 🏠 **Home Screen** → Home Tab
-  - ⚙ **Settings Screen** → Theme switch button (Light/Dark)
+  - **Home**: Dashboard with user list (FlatList + RTK Query for API calls with caching)
+  - **Settings**: Theme switcher (Light/Dark toggle)
+  - **Login**: Basic login screen for validation + navigation flow
 
-- ✅ **Home Screen**
+- **📦 Data Layer Setup**
 
-  - Added FlatList (UserList) and fetched data from Backend API
-  - Used RTK query for network calls (It supports caching out of the box)
-  - Three layers - Data, Domain, Presentation
-  - Upcoming - Error handling support
+  - Clean structure with **Data**, **Domain**, and **Presentation** layers
+  - RTK Query for API handling (with caching by default)
+  - Upcoming: Error handling support
 
-- ✅ Used **react-native-fast-image**
-  - Made use of centralised Image component which uses fast image (good for caching and handling images). As it is centralised, can be easily updated to another component without making changes in the entire app.
+- **🖼 Centralized Image Handling**
 
-## ⚠️ IMPORTANT
+  - Uses `react-native-fast-image` for caching & performance
+  - Wrapped in a central component → easy to swap/upgrade later
 
-- This boilerplate contains custom scripts in package.json for running the application.
-  You must use these scripts to ensure that the correct environment configuration and build flavors are applied.
-- To run the app, first clone the repo and install the yarn dependencies with the help of `yarn` command in the project folder inside terminal
+- **✅ Testing Ready**
+  - **Detox** configured for end-to-end UI testing
 
-Check `package.json` for all the important scripts
+---
 
-| Script                       | Platform | Environment           | Description                           |
-| ---------------------------- | -------- | --------------------- | ------------------------------------- |
-| `yarn androidDev`            | Android  | Development           | Runs dev debug flavour build          |
-| `yarn androidDevRelease`     | Android  | Development           | Runs dev release flavour build        |
-| `yarn androidStaging`        | Android  | Staging               | Runs staging debug flavour build      |
-| `yarn androidStagingRelease` | Android  | Staging               | Runs staging release flavour build    |
-| `yarn androidProdRelease`    | Android  | Production            | Runs production release flavour build |
-| `yarn ios`                   | iOS      | Development (default) | Runs app on iOS                       |
+## ⚡ Alternative API Layer
+
+Looking for Redux Saga instead of RTK Query?  
+Check out the branch [`task/api-redux-saga-axios`](https://github.com/SachinRupani/RN_BoilerplateApp/tree/task/api-redux-saga-axios) where API calls are managed with **Redux Saga + Axios**.
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/SachinRupani/RN_BoilerplateApp.git
+   cd RN_BoilerplateApp
+   ```
+2. Install dependencies
+   ```sh
+   yarn
+   npx pod-install ios
+   ```
+3. Run with the provided scripts (important — ensures env configs are applied):
+   | Script | Platform | Environment | Description |
+   | ---------------------------- | -------- | --------------------- | -------------------------------------- |
+   | `yarn androidDev` | Android | Development | Runs dev debug flavour build |
+   | `yarn androidDevRelease` | Android | Development | Runs dev release flavour build |
+   | `yarn androidStaging` | Android | Staging | Runs staging debug flavour build |
+   | `yarn androidStagingRelease` | Android | Staging | Runs staging release flavour build |
+   | `yarn androidProdRelease` | Android | Production | Runs production release flavour build |
+   | `yarn ios` | iOS | Development (default) | Runs app on iOS |
+   | `yarn detox-build-ios` | iOS | Testing | Builds iOS app for Detox E2E tests |
+   | `yarn detox-test-ios` | iOS | Testing | Runs Detox E2E tests on iOS |
+   | `yarn detox-build-android` | Android | Testing | Builds Android app for Detox E2E tests |
+   | `yarn detox-test-android` | Android | Testing | Runs Detox E2E tests on Android |
 
 ## 📸 Screenshots
 
-#### Dark Theme
+#### 🌑 Dark Theme
 
-<p>
-  <img src="./screenshots/screenshot_1_dark.png" alt="Home Dark Theme" width="45%"/>
-  <img src="./screenshots/screenshot_2_dark.png" alt="Settings Dark Theme" width="45%"/>
-</p>
+<p> <img src="./screenshots/screenshot_1_dark.png" alt="Home Dark Theme" width="45%"/> <img src="./screenshots/screenshot_2_dark.png" alt="Settings Dark Theme" width="45%"/> </p>
 
-#### Light Theme
+#### ☀ Light Theme
+
+<p> <img src="./screenshots/screenshot_1_light.png" alt="Home Light Theme" width="45%"/> <img src="./screenshots/screenshot_2_light.png" alt="Settings Light Theme" width="45%"/> </p>
 
 <p>
   <img src="./screenshots/screenshot_1_light.png" alt="Home Light Theme" width="45%"/>

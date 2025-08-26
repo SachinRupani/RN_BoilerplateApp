@@ -1,8 +1,8 @@
-import {useEffect, useState} from "react";
-import {AppDefaults} from "../../../../config/AppDefaults";
-import {isEmptyArray} from "../../../../utils/GeneralUtils";
-import {useGetUserListQuery} from "../../../data/redux/rtkQuery/services/ApiService";
-import {UserEntity} from "../../entity/user/UserEntity";
+import {useEffect, useState} from 'react';
+import {AppDefaults} from '../../../../config/AppDefaults';
+import {isEmptyArray} from '../../../../utils/GeneralUtils';
+import {useGetUserListQuery} from '../../../data/dataSource/collections/UserEndpoints';
+import {UserEntity} from '../../entity/user/UserEntity';
 
 export const useGetUsersApi = () => {
   const [users, setUsers] = useState<Array<UserEntity>>([]);
@@ -30,8 +30,6 @@ export const useGetUsersApi = () => {
       if (currentPage === AppDefaults.INITIAL_PAGE_NO) {
         loadNextPage();
       }
-
-      console.log(`DataLoaded_Page:${currentPage}`, JSON.stringify(data.users));
     }
   }, [data]);
 
