@@ -1,4 +1,4 @@
-import {prodEnvironment} from "./AppEnvironment";
+import {prodEnvironment} from './AppEnvironment';
 
 /**
  * --IMPORTANT--

@@ -1,0 +1,34 @@
+import {useCallback} from 'react';
+import {useAppTheme} from '../../../../theme/ThemeContext';
+import {ThemeType} from '../../../../theme/ThemeType';
+import {AppButtonMemoized} from '../appButton/AppButton';
+import {AppButtonColorType} from '../appButton/data/AppButtonColorType';
+import {AppButtonVariantType} from '../appButton/data/AppButtonVariantType';
+import {AppButtonWidthType} from '../appButton/data/AppButtonWidthType';
+
+export type PropsAppThemeSwitcher = {
+  extraContainerStyle?: any;
+};
+
+export const AppThemeSwitcher = ({
+  extraContainerStyle,
+}: PropsAppThemeSwitcher) => {
+  const {colors, theme, toggleTheme} = useAppTheme();
+  const isDarkTheme = theme === ThemeType.Dark;
+
+  const _handleThemeSwitchAction = useCallback(() => {
+    toggleTheme();
+  }, [toggleTheme]);
+
+  return (
+    <AppButtonMemoized
+      colorsToUse={colors}
+      textString={`Switch to ${isDarkTheme ? 'Light Theme' : 'Dark Theme'}`}
+      colorType={AppButtonColorType.Primary}
+      variant={AppButtonVariantType.Flat}
+      widthType={AppButtonWidthType.ContentWidthCenter}
+      extraContainerStyle={extraContainerStyle}
+      onClickAction={_handleThemeSwitchAction}
+    />
+  );
+};
