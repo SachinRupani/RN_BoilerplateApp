@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RN_BoilerplateAppTests.xctest"
+               BuildableName = "RN_BoilerplateAppTests"
                BlueprintName = "RN_BoilerplateAppTests"
                ReferencedContainer = "container:RN_BoilerplateApp.xcodeproj">
             </BuildableReference>
