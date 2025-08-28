@@ -8,7 +8,7 @@ import {
   getPrimaryButtonColorSet,
   getSecondaryButtonColorSet,
 } from './data/AppButtonColorSet';
-import {AppButtonColorType} from './data/AppButtonColorType';
+import {AppComponentColorType} from './data/AppButtonColorType';
 import {AppButtonVariantType} from './data/AppButtonVariantType';
 import {AppButtonWidthType} from './data/AppButtonWidthType';
 import {getAppButtonStyles} from './styles/AppButton.styles';
@@ -18,7 +18,7 @@ type PropsAppButton = {
   isLoading?: boolean;
   isButtonDisabled?: boolean;
   textString: string;
-  colorType?: AppButtonColorType;
+  colorType?: AppComponentColorType;
   variant?: AppButtonVariantType;
   widthType?: AppButtonWidthType;
   extraContainerStyle?: any;
@@ -31,7 +31,7 @@ const AppButton = ({
   isLoading,
   isButtonDisabled = false,
   textString,
-  colorType = AppButtonColorType.Primary,
+  colorType = AppComponentColorType.Primary,
   variant = AppButtonVariantType.Main,
   widthType = AppButtonWidthType.Full,
   testID,
@@ -39,7 +39,7 @@ const AppButton = ({
   onClickAction,
 }: PropsAppButton) => {
   const colorSet: AppButtonColorSet = useMemo(() => {
-    return colorType === AppButtonColorType.Secondary
+    return colorType === AppComponentColorType.Secondary
       ? getSecondaryButtonColorSet(colorsToUse, variant)
       : getPrimaryButtonColorSet(colorsToUse, variant);
   }, [colorType, variant, colorsToUse]);
