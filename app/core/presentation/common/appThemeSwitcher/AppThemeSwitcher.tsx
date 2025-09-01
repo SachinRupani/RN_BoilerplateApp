@@ -2,9 +2,9 @@ import {useCallback} from 'react';
 import {useAppTheme} from '../../../../theme/ThemeContext';
 import {ThemeType} from '../../../../theme/ThemeType';
 import {AppButtonMemoized} from '../appButton/AppButton';
-import {AppButtonColorType} from '../appButton/data/AppButtonColorType';
 import {AppButtonVariantType} from '../appButton/data/AppButtonVariantType';
 import {AppButtonWidthType} from '../appButton/data/AppButtonWidthType';
+import {AppComponentColorType} from '../appButton/data/AppComponentColorType';
 
 export type PropsAppThemeSwitcher = {
   extraContainerStyle?: any;
@@ -24,7 +24,7 @@ export const AppThemeSwitcher = ({
     <AppButtonMemoized
       colorsToUse={colors}
       textString={`Switch to ${isDarkTheme ? 'Light Theme' : 'Dark Theme'}`}
-      colorType={AppButtonColorType.Primary}
+      colorType={AppComponentColorType.Primary}
       variant={AppButtonVariantType.Flat}
       widthType={AppButtonWidthType.ContentWidthCenter}
       extraContainerStyle={extraContainerStyle}
