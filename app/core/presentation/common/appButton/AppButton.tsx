@@ -8,9 +8,9 @@ import {
   getPrimaryButtonColorSet,
   getSecondaryButtonColorSet,
 } from './data/AppButtonColorSet';
-import {AppComponentColorType} from './data/AppButtonColorType';
 import {AppButtonVariantType} from './data/AppButtonVariantType';
 import {AppButtonWidthType} from './data/AppButtonWidthType';
+import {AppComponentColorType} from './data/AppComponentColorType';
 import {getAppButtonStyles} from './styles/AppButton.styles';
 
 type PropsAppButton = {
