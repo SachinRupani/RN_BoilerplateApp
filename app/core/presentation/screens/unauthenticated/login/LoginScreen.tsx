@@ -4,7 +4,7 @@ import {AppDefaults} from '../../../../../config/AppDefaults';
 import {useAppNavigation} from '../../../../../navigation/hooks/useAppNavigation';
 import {useAppTheme} from '../../../../../theme/ThemeContext';
 import {AppButtonMemoized} from '../../../common/appButton/AppButton';
-import {AppButtonColorType} from '../../../common/appButton/data/AppButtonColorType';
+import {AppComponentColorType} from '../../../common/appButton/data/AppButtonColorType';
 import {AppHeaderMemoized} from '../../../common/appHeader/AppHeader';
 import {AppPasswordRulesMemoized} from '../../../common/appPasswordRules/AppPasswordRules';
 import {AppTextMemoized} from '../../../common/appText/AppText';
@@ -85,7 +85,7 @@ export const LoginScreen = () => {
           <AppButtonMemoized
             testID={'idLoginButton'}
             isButtonDisabled={!shouldEnableLoginButton}
-            colorType={AppButtonColorType.Primary}
+            colorType={AppComponentColorType.Primary}
             colorsToUse={colors}
             textString="Log in"
             extraContainerStyle={loginStyles.loginButtonContainer}
