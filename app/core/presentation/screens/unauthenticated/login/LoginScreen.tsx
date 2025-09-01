@@ -4,7 +4,7 @@ import {AppDefaults} from '../../../../../config/AppDefaults';
 import {useAppNavigation} from '../../../../../navigation/hooks/useAppNavigation';
 import {useAppTheme} from '../../../../../theme/ThemeContext';
 import {AppButtonMemoized} from '../../../common/appButton/AppButton';
-import {AppComponentColorType} from '../../../common/appButton/data/AppButtonColorType';
+import {AppComponentColorType} from '../../../common/appButton/data/AppComponentColorType';
 import {AppHeaderMemoized} from '../../../common/appHeader/AppHeader';
 import {AppPasswordRulesMemoized} from '../../../common/appPasswordRules/AppPasswordRules';
 import {AppTextMemoized} from '../../../common/appText/AppText';

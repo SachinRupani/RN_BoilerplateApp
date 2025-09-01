@@ -1,7 +1,7 @@
 import React, {memo, useEffect, useMemo, useRef} from 'react';
 import {Animated, View} from 'react-native';
 import {AppColors} from '../../../../theme/AppColors';
-import {AppComponentColorType} from '../appButton/data/AppButtonColorType';
+import {AppComponentColorType} from '../appButton/data/AppComponentColorType';
 import {getAppProgressBarStyles} from './styles/AppProgressBar.styles';
 
 type PropsAppProgressBar = {

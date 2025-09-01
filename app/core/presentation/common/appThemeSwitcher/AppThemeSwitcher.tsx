@@ -2,9 +2,9 @@ import {useCallback} from 'react';
 import {useAppTheme} from '../../../../theme/ThemeContext';
 import {ThemeType} from '../../../../theme/ThemeType';
 import {AppButtonMemoized} from '../appButton/AppButton';
-import {AppComponentColorType} from '../appButton/data/AppButtonColorType';
 import {AppButtonVariantType} from '../appButton/data/AppButtonVariantType';
 import {AppButtonWidthType} from '../appButton/data/AppButtonWidthType';
+import {AppComponentColorType} from '../appButton/data/AppComponentColorType';
 
 export type PropsAppThemeSwitcher = {
   extraContainerStyle?: any;
