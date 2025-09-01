@@ -1,4 +1,4 @@
-export enum AppButtonColorType {
+export enum AppComponentColorType {
   Primary = 'primary',
   Secondary = 'secondary',
 }

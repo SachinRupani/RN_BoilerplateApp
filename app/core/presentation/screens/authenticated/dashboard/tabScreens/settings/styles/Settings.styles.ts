@@ -16,7 +16,8 @@ export const getSettingsStyles = (_: AppColors) => {
     },
 
     switchButtonContainerStyle: {
-      marginVertical: 16,
+      marginTop: 4,
+      marginBottom: 16,
     },
   });
 };

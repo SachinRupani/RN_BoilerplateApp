@@ -2,8 +2,9 @@ import {memo} from 'react';
 import {View} from 'react-native';
 import {useAppTheme} from '../../../../theme/ThemeContext';
 import {AppButtonMemoized} from '../appButton/AppButton';
-import {AppButtonColorType} from '../appButton/data/AppButtonColorType';
 import {AppButtonVariantType} from '../appButton/data/AppButtonVariantType';
+import {AppComponentColorType} from '../appButton/data/AppComponentColorType';
+import {AppProgressBarMemoized} from '../appProgressBar/AppProgressBar';
 import {AppTextMemoized} from '../appText/AppText';
 import {kitcheButtonSectionStyles} from './styles/KitchenButtonsSection.styles';
 
@@ -13,7 +14,7 @@ const KitchenUiSection = ({}: PropsKitchenButtonsSection) => {
   const {colors} = useAppTheme();
   const stylesToUse = kitcheButtonSectionStyles;
 
-  const _renderButtonsTitle = (btnColorType: AppButtonColorType) => {
+  const _renderButtonsTitle = (btnColorType: AppComponentColorType) => {
     return (
       <AppTextMemoized
         textString={btnColorType.valueOf()}
@@ -27,7 +28,7 @@ const KitchenUiSection = ({}: PropsKitchenButtonsSection) => {
     return (
       <View style={stylesToUse.sectionContainer}>
         {/* Title */}
-        {_renderButtonsTitle(AppButtonColorType.Primary)}
+        {_renderButtonsTitle(AppComponentColorType.Primary)}
 
         {/* Buttons */}
         <View style={stylesToUse.rowContainer}>
@@ -35,22 +36,30 @@ const KitchenUiSection = ({}: PropsKitchenButtonsSection) => {
             colorsToUse={colors}
             textString="Main"
             variant={AppButtonVariantType.Main}
-            colorType={AppButtonColorType.Primary}
+            colorType={AppComponentColorType.Primary}
             extraContainerStyle={stylesToUse.singleButtonContainer}
           />
           <AppButtonMemoized
             colorsToUse={colors}
             textString="Flat"
             variant={AppButtonVariantType.Flat}
-            colorType={AppButtonColorType.Primary}
+            colorType={AppComponentColorType.Primary}
             extraContainerStyle={stylesToUse.singleButtonContainer}
           />
           <AppButtonMemoized
             colorsToUse={colors}
             textString="Outline"
             variant={AppButtonVariantType.Outline}
-            colorType={AppButtonColorType.Primary}
+            colorType={AppComponentColorType.Primary}
             extraContainerStyle={stylesToUse.singleButtonContainer}
+          />
+        </View>
+
+        <View style={stylesToUse.sectionFooter}>
+          <AppProgressBarMemoized
+            colors={colors}
+            progressPercent={90}
+            colorType={AppComponentColorType.Primary}
           />
         </View>
       </View>
@@ -61,7 +70,7 @@ const KitchenUiSection = ({}: PropsKitchenButtonsSection) => {
     return (
       <View style={stylesToUse.sectionContainer}>
         {/* Title */}
-        {_renderButtonsTitle(AppButtonColorType.Secondary)}
+        {_renderButtonsTitle(AppComponentColorType.Secondary)}
 
         {/* Buttons */}
         <View style={stylesToUse.rowContainer}>
@@ -69,22 +78,30 @@ const KitchenUiSection = ({}: PropsKitchenButtonsSection) => {
             colorsToUse={colors}
             textString="Main"
             variant={AppButtonVariantType.Main}
-            colorType={AppButtonColorType.Secondary}
+            colorType={AppComponentColorType.Secondary}
             extraContainerStyle={stylesToUse.singleButtonContainer}
           />
           <AppButtonMemoized
             colorsToUse={colors}
             textString="Flat"
             variant={AppButtonVariantType.Flat}
-            colorType={AppButtonColorType.Secondary}
+            colorType={AppComponentColorType.Secondary}
             extraContainerStyle={stylesToUse.singleButtonContainer}
           />
           <AppButtonMemoized
             colorsToUse={colors}
             textString="Outline"
             variant={AppButtonVariantType.Outline}
-            colorType={AppButtonColorType.Secondary}
+            colorType={AppComponentColorType.Secondary}
             extraContainerStyle={stylesToUse.singleButtonContainer}
+          />
+        </View>
+
+        <View style={stylesToUse.sectionFooter}>
+          <AppProgressBarMemoized
+            colors={colors}
+            progressPercent={75}
+            colorType={AppComponentColorType.Secondary}
           />
         </View>
       </View>

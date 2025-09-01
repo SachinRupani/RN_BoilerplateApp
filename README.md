@@ -3,6 +3,8 @@
 A **minimal yet powerful React Native boilerplate** to kickstart your projects.  
 It comes pre-configured with theming, navigation, environment setups, API handling, and testing utilities — designed to save time and enforce best practices from the start.
 
+[![Build Status](https://github.com/SachinRupani/RN_BoilerplateApp/actions/workflows/android-build.yml/badge.svg)](https://github.com/SachinRupani/RN_BoilerplateApp/actions/workflows/android-build.yml)
+
 ---
 
 ## ✨ Features
