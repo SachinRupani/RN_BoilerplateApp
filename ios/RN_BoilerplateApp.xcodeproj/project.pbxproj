@@ -8,16 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RN_BoilerplateAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_BoilerplateAppTests.m */; };
+		03B4FEA62E68AB1C00F37BE6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		03B4FEA72E68AB1C00F37BE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		03B4FEAB2E68AB1C00F37BE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		03B4FEAC2E68AB1C00F37BE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		03B4FEAD2E68AB1C00F37BE6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		03B4FEAE2E68AB1C00F37BE6 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2837F16F6C74783BFB12385 /* NotoSans-Bold.ttf */; };
+		03B4FEAF2E68AB1C00F37BE6 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */; };
+		03B4FEB02E68AB1C00F37BE6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE613EB2CCF74175B7139D0B /* NotoSans-Regular.ttf */; };
+		03B4FEB12E68AB1C00F37BE6 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E95DA86950DB4E27B443D7E4 /* NotoSans-SemiBold.ttf */; };
+		03B4FEBD2E68BA0F00F37BE6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		03B4FEBE2E68BA0F00F37BE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		03B4FEC22E68BA0F00F37BE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		03B4FEC32E68BA0F00F37BE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		03B4FEC42E68BA0F00F37BE6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		03B4FEC52E68BA0F00F37BE6 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2837F16F6C74783BFB12385 /* NotoSans-Bold.ttf */; };
+		03B4FEC62E68BA0F00F37BE6 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */; };
+		03B4FEC72E68BA0F00F37BE6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE613EB2CCF74175B7139D0B /* NotoSans-Regular.ttf */; };
+		03B4FEC82E68BA0F00F37BE6 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E95DA86950DB4E27B443D7E4 /* NotoSans-SemiBold.ttf */; };
+		059BACACFE0EE0C55F4BB034 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3011D39EBE6308C7A9C6878B /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		190891A1F6C646BC9D240AF0 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE613EB2CCF74175B7139D0B /* NotoSans-Regular.ttf */; };
+		1EFC42333765D7BE30F54F23 /* libPods-RN_BoilerplateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */; };
+		3CA05590446BF01A5231BEA9 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FFD6A450620D318388D872 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */; };
 		442BF2619EF54F2FBF771D5F /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */; };
 		53924DDD1A99034B59918C96 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D412B9BDB01AAAA70F18A0C1 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a */; };
-		56038578ACC9C1D555E8333F /* libPods-RN_BoilerplateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4C2FD8D66BE67CBD5C127 /* libPods-RN_BoilerplateApp.a */; };
+		56038578ACC9C1D555E8333F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		617B0CA4863C795A6D208855 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		999E9FF9630B4D57AFB8062E /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E95DA86950DB4E27B443D7E4 /* NotoSans-SemiBold.ttf */; };
 		B6E475980019498590AAB7E0 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2837F16F6C74783BFB12385 /* NotoSans-Bold.ttf */; };
+		DE70889667B98A61CE0B67AD /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE636AA29EADAC5FC0DC9F /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a */; };
 		F0D730379D0B7869329C142F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +58,8 @@
 		00E356EE1AD99517003FC87E /* RN_BoilerplateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RN_BoilerplateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RN_BoilerplateAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RN_BoilerplateAppTests.m; sourceTree = "<group>"; };
+		03B4FEB82E68AB1C00F37BE6 /* RN_BoilerplateApp_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_BoilerplateApp_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B4FECF2E68BA0F00F37BE6 /* RN_BoilerplateApp_Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_BoilerplateApp_Staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* RN_BoilerplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_BoilerplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RN_BoilerplateApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RN_BoilerplateApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -42,15 +67,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RN_BoilerplateApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RN_BoilerplateApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = RN_BoilerplateApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Medium.ttf"; path = "../assets/fonts/NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		3011D39EBE6308C7A9C6878B /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		314A31C0927801B2AA832E17 /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig"; sourceTree = "<group>"; };
 		4E276941AD4D1828C868D76B /* Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		64B4C2FD8D66BE67CBD5C127 /* libPods-RN_BoilerplateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5024014C0B64C294D9EFF86E /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		54FFD6A450620D318388D872 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B663A9CC547B563221E9A3B /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig"; sourceTree = "<group>"; };
+		6EBE636AA29EADAC5FC0DC9F /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RN_BoilerplateApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F6568B5C6494C0557CDB785 /* Pods-RN_BoilerplateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp/Pods-RN_BoilerplateApp.release.xcconfig"; sourceTree = "<group>"; };
 		D2837F16F6C74783BFB12385 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Bold.ttf"; path = "../assets/fonts/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		D412B9BDB01AAAA70F18A0C1 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB78E6024E013C6E14052C22 /* Pods-RN_BoilerplateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp.debug.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp/Pods-RN_BoilerplateApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE613EB2CCF74175B7139D0B /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Regular.ttf"; path = "../assets/fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		E7B12852069F8D916AA34AEE /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.debug.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.debug.xcconfig"; sourceTree = "<group>"; };
 		E896F2DE8D51A15F77161315 /* Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E95DA86950DB4E27B443D7E4 /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-SemiBold.ttf"; path = "../assets/fonts/NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -65,11 +97,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03B4FEA82E68AB1C00F37BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617B0CA4863C795A6D208855 /* BuildFile in Frameworks */,
+				059BACACFE0EE0C55F4BB034 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B4FEBF2E68BA0F00F37BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE70889667B98A61CE0B67AD /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56038578ACC9C1D555E8333F /* libPods-RN_BoilerplateApp.a in Frameworks */,
+				56038578ACC9C1D555E8333F /* BuildFile in Frameworks */,
+				1EFC42333765D7BE30F54F23 /* libPods-RN_BoilerplateApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +161,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				64B4C2FD8D66BE67CBD5C127 /* libPods-RN_BoilerplateApp.a */,
 				D412B9BDB01AAAA70F18A0C1 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a */,
+				15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */,
+				6EBE636AA29EADAC5FC0DC9F /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a */,
+				3011D39EBE6308C7A9C6878B /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +208,8 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RN_BoilerplateApp.app */,
 				00E356EE1AD99517003FC87E /* RN_BoilerplateAppTests.xctest */,
+				03B4FEB82E68AB1C00F37BE6 /* RN_BoilerplateApp_Dev.app */,
+				03B4FECF2E68BA0F00F37BE6 /* RN_BoilerplateApp_Staging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +221,10 @@
 				8F6568B5C6494C0557CDB785 /* Pods-RN_BoilerplateApp.release.xcconfig */,
 				E896F2DE8D51A15F77161315 /* Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.debug.xcconfig */,
 				4E276941AD4D1828C868D76B /* Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig */,
+				5024014C0B64C294D9EFF86E /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig */,
+				314A31C0927801B2AA832E17 /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig */,
+				E7B12852069F8D916AA34AEE /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.debug.xcconfig */,
+				6B663A9CC547B563221E9A3B /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -194,6 +252,48 @@
 			productName = RN_BoilerplateAppTests;
 			productReference = 00E356EE1AD99517003FC87E /* RN_BoilerplateAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03B4FEA32E68AB1C00F37BE6 /* RN_BoilerplateApp_Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B4FEB52E68AB1C00F37BE6 /* Build configuration list for PBXNativeTarget "RN_BoilerplateApp_Dev" */;
+			buildPhases = (
+				03B4FEA42E68AB1C00F37BE6 /* [CP] Check Pods Manifest.lock */,
+				03B4FEA52E68AB1C00F37BE6 /* Sources */,
+				03B4FEA82E68AB1C00F37BE6 /* Frameworks */,
+				03B4FEAA2E68AB1C00F37BE6 /* Resources */,
+				03B4FEB22E68AB1C00F37BE6 /* Bundle React Native code and images */,
+				03B4FEB32E68AB1C00F37BE6 /* [CP] Embed Pods Frameworks */,
+				03B4FEB42E68AB1C00F37BE6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RN_BoilerplateApp_Dev;
+			productName = RN_BoilerplateApp;
+			productReference = 03B4FEB82E68AB1C00F37BE6 /* RN_BoilerplateApp_Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03B4FEBA2E68BA0F00F37BE6 /* RN_BoilerplateApp_Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B4FECC2E68BA0F00F37BE6 /* Build configuration list for PBXNativeTarget "RN_BoilerplateApp_Staging" */;
+			buildPhases = (
+				03B4FEBB2E68BA0F00F37BE6 /* [CP] Check Pods Manifest.lock */,
+				03B4FEBC2E68BA0F00F37BE6 /* Sources */,
+				03B4FEBF2E68BA0F00F37BE6 /* Frameworks */,
+				03B4FEC12E68BA0F00F37BE6 /* Resources */,
+				03B4FEC92E68BA0F00F37BE6 /* Bundle React Native code and images */,
+				03B4FECA2E68BA0F00F37BE6 /* [CP] Embed Pods Frameworks */,
+				03B4FECB2E68BA0F00F37BE6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RN_BoilerplateApp_Staging;
+			productName = RN_BoilerplateApp;
+			productReference = 03B4FECF2E68BA0F00F37BE6 /* RN_BoilerplateApp_Staging.app */;
+			productType = "com.apple.product-type.application";
 		};
 		13B07F861A680F5B00A75B9A /* RN_BoilerplateApp */ = {
 			isa = PBXNativeTarget;
@@ -248,6 +348,8 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RN_BoilerplateApp */,
 				00E356ED1AD99517003FC87E /* RN_BoilerplateAppTests */,
+				03B4FEA32E68AB1C00F37BE6 /* RN_BoilerplateApp_Dev */,
+				03B4FEBA2E68BA0F00F37BE6 /* RN_BoilerplateApp_Staging */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +359,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B4FEAA2E68AB1C00F37BE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B4FEAB2E68AB1C00F37BE6 /* LaunchScreen.storyboard in Resources */,
+				03B4FEAC2E68AB1C00F37BE6 /* Images.xcassets in Resources */,
+				03B4FEAD2E68AB1C00F37BE6 /* PrivacyInfo.xcprivacy in Resources */,
+				03B4FEAE2E68AB1C00F37BE6 /* NotoSans-Bold.ttf in Resources */,
+				03B4FEAF2E68AB1C00F37BE6 /* NotoSans-Medium.ttf in Resources */,
+				03B4FEB02E68AB1C00F37BE6 /* NotoSans-Regular.ttf in Resources */,
+				03B4FEB12E68AB1C00F37BE6 /* NotoSans-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B4FEC12E68BA0F00F37BE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B4FEC22E68BA0F00F37BE6 /* LaunchScreen.storyboard in Resources */,
+				03B4FEC32E68BA0F00F37BE6 /* Images.xcassets in Resources */,
+				03B4FEC42E68BA0F00F37BE6 /* PrivacyInfo.xcprivacy in Resources */,
+				03B4FEC52E68BA0F00F37BE6 /* NotoSans-Bold.ttf in Resources */,
+				03B4FEC62E68BA0F00F37BE6 /* NotoSans-Medium.ttf in Resources */,
+				03B4FEC72E68BA0F00F37BE6 /* NotoSans-Regular.ttf in Resources */,
+				03B4FEC82E68BA0F00F37BE6 /* NotoSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +422,150 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		03B4FEA42E68AB1C00F37BE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03B4FEB22E68AB1C00F37BE6 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		03B4FEB32E68AB1C00F37BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03B4FEB42E68AB1C00F37BE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03B4FEBB2E68BA0F00F37BE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03B4FEC92E68BA0F00F37BE6 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		03B4FECA2E68BA0F00F37BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03B4FECB2E68BA0F00F37BE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		1DFC4FC9968D3CDA30148313 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -416,6 +690,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03B4FEA52E68AB1C00F37BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B4FEA62E68AB1C00F37BE6 /* AppDelegate.mm in Sources */,
+				03B4FEA72E68AB1C00F37BE6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B4FEBC2E68BA0F00F37BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B4FEBD2E68BA0F00F37BE6 /* AppDelegate.mm in Sources */,
+				03B4FEBE2E68BA0F00F37BE6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +779,118 @@
 			};
 			name = Release;
 		};
+		03B4FEB62E68AB1C00F37BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5024014C0B64C294D9EFF86E /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "Dev-Boilerplate-Debug";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Dev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RN_BoilerplateApp/Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rnboilerplateapp.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		03B4FEB72E68AB1C00F37BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314A31C0927801B2AA832E17 /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "Dev-Boilerplate";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Dev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RN_BoilerplateApp/Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rnboilerplateapp.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		03B4FECD2E68BA0F00F37BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B12852069F8D916AA34AEE /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.debug.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "Staging-Boilerplate-Debug";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Staging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RN_BoilerplateApp/Staging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rnboilerplateapp.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		03B4FECE2E68BA0F00F37BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B663A9CC547B563221E9A3B /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "Staging-Boilerplate";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Staging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RN_BoilerplateApp/Staging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rnboilerplateapp.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB78E6024E013C6E14052C22 /* Pods-RN_BoilerplateApp.debug.xcconfig */;
@@ -507,7 +911,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rnboilerplateapp;
 				PRODUCT_NAME = RN_BoilerplateApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -534,7 +938,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rnboilerplateapp;
 				PRODUCT_NAME = RN_BoilerplateApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -545,6 +949,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = "Boilerplate-Debug";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -625,6 +1030,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = Boilerplate;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -701,6 +1107,24 @@
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
 				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B4FEB52E68AB1C00F37BE6 /* Build configuration list for PBXNativeTarget "RN_BoilerplateApp_Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B4FEB62E68AB1C00F37BE6 /* Debug */,
+				03B4FEB72E68AB1C00F37BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B4FECC2E68BA0F00F37BE6 /* Build configuration list for PBXNativeTarget "RN_BoilerplateApp_Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B4FECD2E68BA0F00F37BE6 /* Debug */,
+				03B4FECE2E68BA0F00F37BE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
