@@ -33,7 +33,7 @@ It comes pre-configured with theming, navigation, environment setups, API handli
 - **⚙ Platform-Specific Configs**
 
   - **Android**: Product flavors for different environments with unique app IDs & icons
-  - **iOS**: Planned support for config-based variants
+  - **iOS**: Added schemes and targets along with different bundle identifier and app icons
 
 - **📱 Prebuilt Screens**
 
