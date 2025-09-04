@@ -37,10 +37,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		190891A1F6C646BC9D240AF0 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE613EB2CCF74175B7139D0B /* NotoSans-Regular.ttf */; };
 		1EFC42333765D7BE30F54F23 /* libPods-RN_BoilerplateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */; };
+		3CA05590446BF01A5231BEA9 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FFD6A450620D318388D872 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */; };
 		442BF2619EF54F2FBF771D5F /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */; };
 		53924DDD1A99034B59918C96 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D412B9BDB01AAAA70F18A0C1 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a */; };
-		56038578ACC9C1D555E8333F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		617B0CA4863C795A6D208855 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		56038578ACC9C1D555E8333F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		617B0CA4863C795A6D208855 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		999E9FF9630B4D57AFB8062E /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E95DA86950DB4E27B443D7E4 /* NotoSans-SemiBold.ttf */; };
 		B6E475980019498590AAB7E0 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2837F16F6C74783BFB12385 /* NotoSans-Bold.ttf */; };
@@ -78,6 +79,7 @@
 		314A31C0927801B2AA832E17 /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig"; sourceTree = "<group>"; };
 		4E276941AD4D1828C868D76B /* Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5024014C0B64C294D9EFF86E /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		54FFD6A450620D318388D872 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B663A9CC547B563221E9A3B /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.release.xcconfig"; sourceTree = "<group>"; };
 		6EBE636AA29EADAC5FC0DC9F /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RN_BoilerplateApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,7 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617B0CA4863C795A6D208855 /* (null) in Frameworks */,
+				617B0CA4863C795A6D208855 /* BuildFile in Frameworks */,
+				3CA05590446BF01A5231BEA9 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56038578ACC9C1D555E8333F /* (null) in Frameworks */,
+				56038578ACC9C1D555E8333F /* BuildFile in Frameworks */,
 				1EFC42333765D7BE30F54F23 /* libPods-RN_BoilerplateApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +172,7 @@
 				D412B9BDB01AAAA70F18A0C1 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a */,
 				15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */,
 				6EBE636AA29EADAC5FC0DC9F /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a */,
+				54FFD6A450620D318388D872 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1025,7 +1029,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -1095,7 +1102,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
