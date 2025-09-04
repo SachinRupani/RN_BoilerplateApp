@@ -26,12 +26,7 @@
 		03B4FEC62E68BA0F00F37BE6 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */; };
 		03B4FEC72E68BA0F00F37BE6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE613EB2CCF74175B7139D0B /* NotoSans-Regular.ttf */; };
 		03B4FEC82E68BA0F00F37BE6 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E95DA86950DB4E27B443D7E4 /* NotoSans-SemiBold.ttf */; };
-		03B4FED82E68C01200F37BE6 /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B4FED72E68C01200F37BE6 /* Dev-Info.plist */; };
-		03B4FED92E68C01200F37BE6 /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B4FED72E68C01200F37BE6 /* Dev-Info.plist */; };
-		03B4FEDA2E68C01200F37BE6 /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B4FED72E68C01200F37BE6 /* Dev-Info.plist */; };
-		03B4FEDC2E68C01900F37BE6 /* Staging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B4FEDB2E68C01900F37BE6 /* Staging-Info.plist */; };
-		03B4FEDD2E68C01900F37BE6 /* Staging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B4FEDB2E68C01900F37BE6 /* Staging-Info.plist */; };
-		03B4FEDE2E68C01900F37BE6 /* Staging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B4FEDB2E68C01900F37BE6 /* Staging-Info.plist */; };
+		059BACACFE0EE0C55F4BB034 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3011D39EBE6308C7A9C6878B /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -65,8 +60,6 @@
 		00E356F21AD99517003FC87E /* RN_BoilerplateAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RN_BoilerplateAppTests.m; sourceTree = "<group>"; };
 		03B4FEB82E68AB1C00F37BE6 /* RN_BoilerplateApp_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_BoilerplateApp_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B4FECF2E68BA0F00F37BE6 /* RN_BoilerplateApp_Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_BoilerplateApp_Staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03B4FED72E68C01200F37BE6 /* Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dev-Info.plist"; sourceTree = "<group>"; };
-		03B4FEDB2E68C01900F37BE6 /* Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Staging-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RN_BoilerplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_BoilerplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RN_BoilerplateApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RN_BoilerplateApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -76,6 +69,7 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = RN_BoilerplateApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D25AC4700A74516B33644AD /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Medium.ttf"; path = "../assets/fonts/NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		3011D39EBE6308C7A9C6878B /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		314A31C0927801B2AA832E17 /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.release.xcconfig"; sourceTree = "<group>"; };
 		4E276941AD4D1828C868D76B /* Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests/Pods-RN_BoilerplateApp-RN_BoilerplateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5024014C0B64C294D9EFF86E /* Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig"; path = "Target Support Files/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev/Pods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				617B0CA4863C795A6D208855 /* BuildFile in Frameworks */,
-				3CA05590446BF01A5231BEA9 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */,
+				059BACACFE0EE0C55F4BB034 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +153,6 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
-				03B4FED72E68C01200F37BE6 /* Dev-Info.plist */,
-				03B4FEDB2E68C01900F37BE6 /* Staging-Info.plist */,
 			);
 			name = RN_BoilerplateApp;
 			sourceTree = "<group>";
@@ -172,7 +164,7 @@
 				D412B9BDB01AAAA70F18A0C1 /* libPods-RN_BoilerplateApp-RN_BoilerplateAppTests.a */,
 				15EF215B5DBD9F800D0E9BEA /* libPods-RN_BoilerplateApp.a */,
 				6EBE636AA29EADAC5FC0DC9F /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Staging.a */,
-				54FFD6A450620D318388D872 /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */,
+				3011D39EBE6308C7A9C6878B /* libPods-RN_BoilerplateApp-RN_BoilerplateApp_Dev.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -374,13 +366,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B4FEDA2E68C01200F37BE6 /* Dev-Info.plist in Resources */,
 				03B4FEAB2E68AB1C00F37BE6 /* LaunchScreen.storyboard in Resources */,
 				03B4FEAC2E68AB1C00F37BE6 /* Images.xcassets in Resources */,
 				03B4FEAD2E68AB1C00F37BE6 /* PrivacyInfo.xcprivacy in Resources */,
 				03B4FEAE2E68AB1C00F37BE6 /* NotoSans-Bold.ttf in Resources */,
 				03B4FEAF2E68AB1C00F37BE6 /* NotoSans-Medium.ttf in Resources */,
-				03B4FEDE2E68C01900F37BE6 /* Staging-Info.plist in Resources */,
 				03B4FEB02E68AB1C00F37BE6 /* NotoSans-Regular.ttf in Resources */,
 				03B4FEB12E68AB1C00F37BE6 /* NotoSans-SemiBold.ttf in Resources */,
 			);
@@ -390,13 +380,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B4FED82E68C01200F37BE6 /* Dev-Info.plist in Resources */,
 				03B4FEC22E68BA0F00F37BE6 /* LaunchScreen.storyboard in Resources */,
 				03B4FEC32E68BA0F00F37BE6 /* Images.xcassets in Resources */,
 				03B4FEC42E68BA0F00F37BE6 /* PrivacyInfo.xcprivacy in Resources */,
 				03B4FEC52E68BA0F00F37BE6 /* NotoSans-Bold.ttf in Resources */,
 				03B4FEC62E68BA0F00F37BE6 /* NotoSans-Medium.ttf in Resources */,
-				03B4FEDC2E68C01900F37BE6 /* Staging-Info.plist in Resources */,
 				03B4FEC72E68BA0F00F37BE6 /* NotoSans-Regular.ttf in Resources */,
 				03B4FEC82E68BA0F00F37BE6 /* NotoSans-SemiBold.ttf in Resources */,
 			);
@@ -406,13 +394,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B4FED92E68C01200F37BE6 /* Dev-Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F0D730379D0B7869329C142F /* PrivacyInfo.xcprivacy in Resources */,
 				B6E475980019498590AAB7E0 /* NotoSans-Bold.ttf in Resources */,
 				442BF2619EF54F2FBF771D5F /* NotoSans-Medium.ttf in Resources */,
-				03B4FEDD2E68C01900F37BE6 /* Staging-Info.plist in Resources */,
 				190891A1F6C646BC9D240AF0 /* NotoSans-Regular.ttf in Resources */,
 				999E9FF9630B4D57AFB8062E /* NotoSans-SemiBold.ttf in Resources */,
 			);
