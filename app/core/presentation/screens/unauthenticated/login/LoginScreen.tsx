@@ -1,8 +1,10 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import {View} from 'react-native';
 import {AppDefaults} from '../../../../../config/AppDefaults';
 import {useAppNavigation} from '../../../../../navigation/hooks/useAppNavigation';
 import {useAppTheme} from '../../../../../theme/ThemeContext';
+import {getSafeString} from '../../../../../utils/GeneralUtils';
+import {appStorageImpl} from '../../../../data/interfaceImpl/AppStorageImpl';
 import {AppButtonMemoized} from '../../../common/appButton/AppButton';
 import {AppComponentColorType} from '../../../common/appButton/data/AppComponentColorType';
 import {AppHeaderMemoized} from '../../../common/appHeader/AppHeader';
@@ -21,9 +23,11 @@ export const LoginScreen = () => {
 
   const {navigateToDashboard} = useAppNavigation();
 
-  const _handleLoginAction = useCallback(() => {
-    navigateToDashboard();
-  }, [navigateToDashboard]);
+  const appStorageToUse = appStorageImpl;
+
+  const existingUserEmail = getSafeString(
+    appStorageToUse.getStringValue('user.email'),
+  );
 
   // Functions & state
   const {
@@ -32,7 +36,19 @@ export const LoginScreen = () => {
     shouldDisplayPasswordRules,
     updateEmail,
     updatePassword,
-  } = useLoginScreenHook();
+    saveUserEmailToStorage,
+  } = useLoginScreenHook(appStorageToUse);
+
+  const _handleLoginAction = useCallback(() => {
+    saveUserEmailToStorage();
+    navigateToDashboard();
+  }, [navigateToDashboard]);
+
+  useEffect(() => {
+    if (existingUserEmail.length > 0) {
+      navigateToDashboard();
+    }
+  }, [existingUserEmail, navigateToDashboard]);
 
   const _renderBodyContent = () => {
     return (

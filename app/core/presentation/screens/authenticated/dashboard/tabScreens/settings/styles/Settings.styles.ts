@@ -19,5 +19,9 @@ export const getSettingsStyles = (_: AppColors) => {
       marginTop: 4,
       marginBottom: 16,
     },
+
+    logOutButtonContainer: {
+      marginVertical: 16,
+    },
   });
 };
