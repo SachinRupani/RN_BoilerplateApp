@@ -22,7 +22,7 @@ const AppProgressBar = ({
 
   const withinBoundPercentage = useMemo(() => {
     return Math.max(0, Math.min(100, progressPercent));
-  }, [[progressPercent]]);
+  }, [progressPercent]);
 
   const isSecondaryColor = colorType === AppComponentColorType.Secondary;
 
@@ -32,7 +32,12 @@ const AppProgressBar = ({
       duration: durationAnimMilliseconds,
       useNativeDriver: true,
     }).start();
-  }, [progressPercent, durationAnimMilliseconds, animValue]);
+  }, [
+    progressPercent,
+    durationAnimMilliseconds,
+    animValue,
+    withinBoundPercentage,
+  ]);
 
   return (
     <View
@@ -49,7 +54,8 @@ const AppProgressBar = ({
             ? stylesToUse.fillBarSecondary
             : stylesToUse.fillBarPrimary,
           {transform: [{scaleX: animValue}]},
-        ]}></Animated.View>
+        ]}
+      />
     </View>
   );
 };

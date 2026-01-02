@@ -10,7 +10,7 @@ export const TestComponent = () => {
   const [reverseCounter, setReverseCounter] = useState<number>(-1);
 
   useEffect(() => {
-    let timeoutInstance: NodeJS.Timeout | undefined = undefined;
+    let timeoutInstance: NodeJS.Timeout | undefined;
     if (reverseCounter > 0) {
       timeoutInstance = setTimeout(() => {
         setReverseCounter(prev => prev - 1);

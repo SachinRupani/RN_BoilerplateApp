@@ -41,6 +41,7 @@ const AppImage = ({
     return (
       <FastImage
         resizeMode={resizeMode ?? 'cover'}
+        // eslint-disable-next-line react-native/no-inline-styles
         style={{width: 48, height: 48, ...imageStyles}}
         source={_getImageSource()}
       />

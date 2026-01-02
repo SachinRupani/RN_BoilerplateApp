@@ -42,7 +42,7 @@ export const LoginScreen = () => {
   const _handleLoginAction = useCallback(() => {
     saveUserEmailToStorage();
     navigateToDashboard();
-  }, [navigateToDashboard]);
+  }, [navigateToDashboard, saveUserEmailToStorage]);
 
   useEffect(() => {
     if (existingUserEmail.length > 0) {
