@@ -12,6 +12,7 @@ module.exports = {
     quotes: ['warn', 'single', {avoidEscape: true}],
     'react/react-in-jsx-scope': 'off', // ✅ React 17+ doesn’t need React in scope
     '@typescript-eslint/no-unused-vars': 'off',
+    '@react-native/no-deep-imports': 'off',
   },
   settings: {
     react: {
