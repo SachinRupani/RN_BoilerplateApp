@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import {AppDefaults} from '../../../../config/AppDefaults';
 import {isEmptyArray} from '../../../../utils/GeneralUtils';
 import {useGetUserListQuery} from '../../../data/dataSource/collections/UserEndpoints';
@@ -14,6 +14,12 @@ export const useGetUsersApi = () => {
     pageNo: currentPage,
     itemsPerPage: AppDefaults.ITEMS_PER_PAGE,
   });
+
+  const loadNextPage = useCallback(() => {
+    if (!isFetching && data && currentPage < data.totalPageCount) {
+      setCurrentPage(currentPage + 1);
+    }
+  }, [isFetching, data, currentPage]);
 
   useEffect(() => {
     if (data && !isEmptyArray(data.users)) {
@@ -31,13 +37,7 @@ export const useGetUsersApi = () => {
         loadNextPage();
       }
     }
-  }, [data]);
-
-  const loadNextPage = () => {
-    if (!isFetching && data && currentPage < data.totalPageCount) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
+  }, [data, currentPage, loadNextPage]);
 
   const refreshList = () => {
     setUsers([]);

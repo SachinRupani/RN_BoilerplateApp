@@ -31,6 +31,7 @@ export const useLoginValidationUseCase = () => {
       ...loginEntity,
       passwordRules: newRulesState,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loginEntity.password]);
 
   const updateEmail = (input: string) => {

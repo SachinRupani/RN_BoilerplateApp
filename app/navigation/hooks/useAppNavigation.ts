@@ -1,4 +1,5 @@
 import {
+  CommonActions,
   NavigationProp,
   StackActions,
   useNavigation,
@@ -26,5 +27,19 @@ export const useAppNavigation = () => {
     navigation.navigate(ScreenNames.UserDetails, {userId: userId});
   };
 
-  return {navigateBack, navigateToDashboard, navigateToUserDetails};
+  const navigateToLogin = () => {
+    navigation.dispatch(
+      CommonActions.reset({
+        index: 0,
+        routes: [{name: ScreenNames.Login}],
+      }),
+    );
+  };
+
+  return {
+    navigateBack,
+    navigateToDashboard,
+    navigateToUserDetails,
+    navigateToLogin,
+  };
 };
