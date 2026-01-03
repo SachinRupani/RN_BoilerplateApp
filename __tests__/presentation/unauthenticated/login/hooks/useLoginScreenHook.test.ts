@@ -1,10 +1,11 @@
 import {renderHook} from '@testing-library/react-native';
 import {act} from 'react';
 import {useLoginScreenHook} from '../../../../../app/core/presentation/screens/unauthenticated/login/hooks/useLoginScreenHook';
+import {appStorageImplMock} from '../../../../mocks/interface-mocks/AppStorageImplMock';
 
 describe('test useLoginScreenHook', () => {
   it('should disable login button and hide password rules initially', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     expect(result.current.shouldEnableLoginButton).toBe(false);
 
@@ -12,7 +13,7 @@ describe('test useLoginScreenHook', () => {
   });
 
   it('should enable login button if email and password are valid', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     expect(result.current.shouldEnableLoginButton).toBe(false);
 
@@ -28,7 +29,7 @@ describe('test useLoginScreenHook', () => {
   });
 
   it('should disable login button if email is invalid', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     expect(result.current.shouldEnableLoginButton).toBe(false);
 
@@ -44,7 +45,7 @@ describe('test useLoginScreenHook', () => {
   });
 
   it('should disable login button if password is invalid', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     expect(result.current.shouldEnableLoginButton).toBe(false);
 
@@ -60,7 +61,7 @@ describe('test useLoginScreenHook', () => {
   });
 
   it('should disable login button if email and password are invalid', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     expect(result.current.shouldEnableLoginButton).toBe(false);
 
@@ -76,7 +77,7 @@ describe('test useLoginScreenHook', () => {
   });
 
   it('should display the password rules if password is non-empty', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     act(() => {
       result.current.updatePassword('S');
@@ -86,7 +87,7 @@ describe('test useLoginScreenHook', () => {
   });
 
   it('should hide the password rules if password is empty', () => {
-    const {result} = renderHook(() => useLoginScreenHook());
+    const {result} = renderHook(() => useLoginScreenHook(appStorageImplMock));
 
     act(() => {
       result.current.updatePassword('');
